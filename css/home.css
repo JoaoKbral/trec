@@ -1,0 +1,42 @@
+.frase {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 70vh;
+    width: 100%;
+
+    background-image: none;
+}
+
+#frase {
+    font-size: 5rem;
+    padding: 0 50px;
+    text-align: center;
+    margin: 160px;
+}
+
+.captura{
+    height: fit-content;
+    background: #ebeff5;
+    color:#333;
+    /* display: none; */
+}
+
+.motivos {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.escolhas {
+    background: #b7b6b6;
+}
+
+.titulo {
+    font-size: xx-large;
+}
+
+.servicos{
+    height: fit-content;
+    display: flex;
+}

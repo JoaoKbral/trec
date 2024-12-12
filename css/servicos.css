@@ -1,0 +1,71 @@
+section {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.selecaoPacote {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 7px;
+
+}
+
+.tipoPacote {
+
+    background: aqua;
+    border-radius: 7px;
+    width: 100%;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+}
+
+.empresas {
+    display: none;
+}
+
+.pacotes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    gap: 5px;
+}
+
+.pacote {
+    width: 100%;
+}
+
+.titulo {
+    background: greenyellow;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 7px;
+    
+
+    a {
+        text-decoration: none;
+        color: #000000;
+
+        h1 {
+            padding: 20px;
+        }
+    }
+}
+
+.conteudo{
+    display: none;
+    list-style-position: inside;
+    
+    ul{
+        padding: 0 0 0 20px;
+        list-style-type: none;
+    }
+}
+
+.visivel{
+    display: flex;
+}
