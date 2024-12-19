@@ -1,0 +1,14 @@
+{
+  "name": "trec",
+  "source": "html/home.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}

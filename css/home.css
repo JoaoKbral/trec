@@ -1,31 +1,42 @@
+.first {
+    padding: 0;
+    margin: 0;
+}
+
 .frase {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    height: 70vh;
+    height: 100vh;
     width: 100%;
 
     background-image: none;
 }
 
 #frase {
+    position: relative;
+    top: 40%;
     font-size: 5rem;
-    padding: 0 50px;
     text-align: center;
-    margin: 160px;
+    padding: 0 10%;
 }
 
-.captura{
-    height: fit-content;
-    background: #ebeff5;
-    color:#333;
-    /* display: none; */
+.captura {
+    height: 100vh;
 }
+
+.pin-wrap {
+    background: #ebeff5;
+    color: #333;
+}
+
 
 .motivos {
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
+    flex-direction: row;
+}
+
+
+.motivo {
+    width: 100vw;
+    height: 100vh;
 }
 
 .escolhas {
@@ -36,7 +47,12 @@
     font-size: xx-large;
 }
 
-.servicos{
-    height: fit-content;
+.servicos {
+    height: 100vh;
     display: flex;
+    background: rosybrown;
+}
+
+::-webkit-scrollbar {
+    display: none
 }
