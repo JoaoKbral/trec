@@ -8,7 +8,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 150px;
+    height: 100px;
     
 }
 
@@ -46,7 +46,7 @@ nav {
 
 .navItem:hover {
     transition: 0.2s linear;
-    background: rgb(249, 236, 199);
+    background: rgb(241, 241, 241);
 }
 
 .contato {
@@ -54,7 +54,7 @@ nav {
     height: fit-content;
     border: 1px solid #D4AF37;
     border-radius: 1000px;
-    padding: 20px;
+    padding: 10px;
     background: #ffd752;
 }
 
@@ -100,7 +100,7 @@ nav {
  #contato, .navItem{
     font-size: larger;
  }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .menu {
         display: flex;
         overflow-x: auto;

@@ -12,7 +12,7 @@
 
 #frase {
     position: relative;
-    top: 40%;
+    top: 20%;
     font-size: 5rem;
     text-align: center;
     padding: 0 10%;
@@ -55,4 +55,10 @@
 
 ::-webkit-scrollbar {
     display: none
+}
+
+@media (max-width: 450px) {
+    .alvo {
+            font-size: 40px;
+    }
 }

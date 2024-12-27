@@ -24,27 +24,31 @@ section {
     }
 }
 
+.eventos,
+.empresas {
+    width: 70vw;
+    margin-top: 1rem;
+}
+
 .empresas {
     display: none;
 }
 
 .pacotes {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 5px;
     gap: 5px;
+    width: fit-content;
 }
 
-.pacote {
-    width: 100%;
-}
-
-.titulo {
+.valor {
+    padding: 20px;
     background: greenyellow;
-    width: 100%;
+    width: 20rem;
     border: 2px solid black;
     border-radius: 7px;
-    
+    height: 280px;
 
     a {
         text-decoration: none;
@@ -56,16 +60,16 @@ section {
     }
 }
 
-.conteudo{
-    display: none;
+.conteudo {
+
     list-style-position: inside;
-    
-    ul{
+
+    ul {
         padding: 0 0 0 20px;
         list-style-type: none;
     }
 }
 
-.visivel{
+.visivel {
     display: flex;
 }
