@@ -1,5 +1,5 @@
 nav {
-    z-index: 100;
+    z-index: 50;
     position: fixed;
     top: 0;
     left: 0;
@@ -52,7 +52,7 @@ nav {
 .contato {
     width: fit-content;
     height: fit-content;
-    border: 1px solid #D4AF37;
+    border: 1px solid #facf41;
     border-radius: 1000px;
     padding: 10px;
     background: #ffd752;
@@ -73,8 +73,7 @@ nav {
 
 .contato:hover {
     transition: 0.2s linear;
-    background: #D4AF37;
-    filter: brightness(1.3);
+    background: #f9c002;
 }
 
 @keyframes contatoHover {

@@ -13,14 +13,15 @@ section {
 
 .tipoPacote {
 
-    background: aqua;
+    background: rgb(0, 0, 0);
     border-radius: 7px;
     width: 100%;
     text-align: center;
 
+    color: #ffffff;
     a {
         text-decoration: none;
-        color: #000000;
+        color: #ffffff;
     }
 }
 
@@ -28,6 +29,9 @@ section {
 .empresas {
     width: 70vw;
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .empresas {
@@ -38,36 +42,52 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 5px;
-    gap: 5px;
+    gap: 15px;
     width: fit-content;
 }
 
 .valor {
     padding: 20px;
-    background: greenyellow;
-    width: 20rem;
+    background: rgb(13, 114, 4);
+    width: 20vw;
+    height: 20vw;
     border: 2px solid black;
     border-radius: 7px;
-    height: 280px;
-
+    color: #ffffff;
     a {
         text-decoration: none;
-        color: #000000;
+        color: #ffffff;
 
-        h1 {
-            padding: 20px;
-        }
     }
+
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .conteudo {
-
+    /* padding: 0 0 20px 0; */
+    
+    width: 20vw;
     list-style-position: inside;
-
+    font-size: 20px;
+    line-height: 1.5;
     ul {
-        padding: 0 0 0 20px;
+        
         list-style-type: none;
     }
+}
+
+.tipoPacote:hover{
+    filter: brightness(0.7);
+}
+
+a.tipoPacote{
+    padding: 15px;
+    border-radius: 1000px;
+    border: none;
+    font-size: 20px;
 }
 
 .visivel {

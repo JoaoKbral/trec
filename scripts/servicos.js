@@ -4,11 +4,11 @@ const sectionEmpresas = document.querySelector(".empresas");
 const sectionEventos = document.querySelector(".eventos");
 
 botaoEmpresas.addEventListener('click', () => {
-    sectionEmpresas.style.display = "block";
+    sectionEmpresas.style.display = "flex";
     sectionEventos.style.display = "none";
 });
 botaoEventos.addEventListener('click', () => {
-    sectionEventos.style.display = "block";
+    sectionEventos.style.display = "flex";
     sectionEmpresas.style.display = "none";
 });
 

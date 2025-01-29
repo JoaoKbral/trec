@@ -5,20 +5,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 const horizontalSections = gsap.utils.toArray('.horizontal');
 
-horizontalSections.forEach(function (sec, i) {	
-  
+horizontalSections.forEach(function (sec, i) {
+
   let thisPinWrap = sec.querySelector('.pin-wrap');
   let thisAnimWrap = thisPinWrap.querySelector('.animation-wrap');
-  
-  let getToValue = () => -(thisAnimWrap.scrollWidth - window.innerWidth); 
 
-  gsap.fromTo(thisAnimWrap, { 
-    x: () => thisAnimWrap.classList.contains('to-right') ? 0 : getToValue() 
-  }, { 
-    x: () => thisAnimWrap.classList.contains('to-right') ? getToValue() : 0, 
+  let getToValue = () => -(thisAnimWrap.scrollWidth - window.innerWidth);
+
+  gsap.fromTo(thisAnimWrap, {
+    x: () => thisAnimWrap.classList.contains('to-right') ? 0 : getToValue()
+  }, {
+    x: () => thisAnimWrap.classList.contains('to-right') ? getToValue() : 0,
     ease: "none",
     scrollTrigger: {
-      trigger: sec,		
+      trigger: sec,
       start: "top top",
       end: () => "+=" + (thisAnimWrap.scrollWidth - window.innerWidth),
       pin: thisPinWrap,
