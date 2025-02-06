@@ -47,10 +47,11 @@
     font-size: xx-large;
 }
 
-.servicos {
-    height: 100vh;
-    display: flex;
-    background: rosybrown;
+section.chamada{
+    background: #aaff72;
+    border: none;
+    width: 100%;
+    padding: 100px;
 }
 
 ::-webkit-scrollbar {

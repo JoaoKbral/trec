@@ -17,4 +17,5 @@ main{
 }
 
 footer{
+    display: flex;
 }
