@@ -8,43 +8,41 @@
     <link rel="stylesheet" href="../css/padrao.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/sideScroll.css">
-    <link rel="stylesheet" href="../css/homeServicos.css">
+    <!-- <link rel="stylesheet" href="../css/homeChamada.css"> -->
 
     <style>
         .none {
             display: none;
         }
     </style>
-
 </head>
 
 <body>
     <nav>
-        <a class="logo" href="../html/home.html"><img src="../imgs/t rec - branco - nome lateral.png" alt="logo"></a>
-        <ul class="menu">
-            <li class="navItem"><a href="../html/home.html">Home</a></li>
-            <li class="navItem"><a href="../html/sobre.html">Quem somos</a></li>
-            <li class="navItem"><a href="../html/ensaios.html">Nossos trabalhos</a></li>
-            <li class="navItem"><a href="../html/servicos.html">Valores</a></li>
-        </ul>
-        <div class="contato menu">
-            <p class="led"></p><a id="contato" href="../html/contato.html">Entre em contato</a>
+        <div class="menuWrapper">
+            <a class="logo" href="../html/home.html"><img src="../imgs/t rec - branco - nome lateral.png" alt="logo"></a>
+            <ul class="menu">
+                <li class="navItem"><a href="../html/home.html">Home</a></li>
+                <li class="navItem"><a href="../html/sobre.html">Quem somos</a></li>
+                <li class="navItem"><a href="../html/ensaios.html">Nossos trabalhos</a></li>
+                <li class="navItem"><a href="../html/servicos.html">Valores</a></li>
+            </ul>
+            <div class="contato menu">
+                <p class="led"></p><a id="contato" href="../html/contato.html">Entre em contato</a>
+            </div>
         </div>
     </nav>
 
     <main>
-        <section class="first">
-            <div class="frase">
-                <div id="frase">
-                    <h1 class="destaque alvo">
-                        <i class="">
-                            Porque grandes momentos não podem ser extintos
-                            <!-- Transformando momentos em memórias -->
-                            <!-- Nós não gravamos, eternizamos -->
-                        </i>
-                    </h1>
-                </div>
+        <section class="first frase">
+            <div id="frase">
+                <h1 class="alvo">
+                    <i class="">
+                        Porque grandes momentos não podem ser extintos
+                        <!-- Transformando momentos em memórias -->
+                        <!-- Nós não gravamos, eternizamos -->
+                    </i>
+                </h1>
             </div>
 
         </section>
@@ -54,29 +52,18 @@
         <section class="captura horizontal">
             <div class="pin-wrap">
                 <div class="motivos animation-wrap to-right">
-                    <div class="motivo item">aodnfoasndf</div>
-                    <div class="motivo item">aodnfoasndf</div>
-                    <div class="motivo item">aodnfoasndf</div>
-                    <div class="motivo item">aodnfoasndf</div>
-                    <div class="motivo item">aodnfoasndf</div>
-                    <!-- <div class="motivo item animate__animated animate__slideInLeft animate__slideOutLeft animate__slideInRight animate__slideOutRight"></div> -->
+                    <div class="motivo item">
+                        <p>Tranformamos seus momentos em memórias épicas</p>
+                    </div>
+                    <div class="motivo item">
+                        <p>aodnfoasndf</p>
+                    </div>
+                    <div class="motivo item">
+                        <p>aodnfoasndf</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- <section class="captura horizontal">
-            <div class="pin-wrap">
-                <div class="motivos animation-wrap to-left">
-                    <div class="motivo item">aodnfoasndf</div>
-                    <div class="motivo item">aodnfoasndf</div>
-                    <div class="motivo item">aodnfoasndf</div>
-                    <div class="motivo item">aodnfoasndf</div>
-                    <div class="motivo item">aodnfoasndf</div>
-                    
-
-                    
-                </div>
-            </div>
-        </section> -->
         <!-- TODO Apresentação sobre tipos  de serviços-->
         <section class="servicos">
             <div class="servico">
@@ -88,9 +75,10 @@
                 <div class="descricaoServico">Ajudamos sua empresa a crescer</div>
             </div>
             <div class="servico">
-                <div class="img"><img src="../imgs/ana.jpg" alt="#"></div>
+                <div class="img"><img src="../imgs/ana.png" alt="#"></div>
                 <div class="descricaoServico">Meia bomba</div>
             </div>
+           
         </section>
 
         <section class="chamada">
@@ -109,13 +97,7 @@
         asdasdasd
         <!-- direitos reservados -->
     </footer>
-    <!-- 
-        Honorable mention to Paul Slawik
-        for his Bi-Directional Fake Horizontal Scroll Demo - GSAP ScrollTrigger
-        Menção honrosa a Paul Slawik
-        pelo seu Bi-Directional Fake Horizontal Scroll Demo - GSAP ScrollTrigger
-    -->
+    <script type="module" src="../scripts/dunno.js"></script>
 </body>
-<script type="module" src="../scripts/dunno.js"></script>
 
 </html>

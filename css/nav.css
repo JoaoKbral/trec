@@ -1,22 +1,33 @@
 nav {
     z-index: 50;
     position: fixed;
-    top: 0;
-    left: 0;
     overflow: hidden;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
     align-items: center;
     height: 100px;
-    
+    margin: 0 auto;
+
+}
+
+.menuWrapper{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    background: #ebfdeb;
+    padding: 10px 30px;
+    border-radius: 1000px;
 }
 
 .logo {
     position: relative;
 
     img {
-        width: 140px;
+        width: 120px;
     }
 }
 
@@ -29,7 +40,7 @@ nav {
     gap: 20px;
     padding: 3px 15px;
     border-radius: 1000px;
-    background: white;
+    /* background: white; */
 }
 
 .navItem {
@@ -38,6 +49,7 @@ nav {
     align-items: center;
     padding: 3px 10px;
     border-radius: 1000px;
+
     a {
         text-decoration: none;
         color: black;
@@ -61,19 +73,19 @@ nav {
 .led {
     width: 10px;
     height: 10px;
-    margin-right: 5px;
+    margin: 0 3px 0 5px;
     border-radius: 50%;
     border: 1px solid black;
     background: #930101;
 }
 
-.contato:hover .led {
-    animation: contatoHover 0.5s ease-in-out alternate infinite;
-}
-
 .contato:hover {
     transition: 0.2s linear;
     background: #f9c002;
+
+    .led {
+        animation: contatoHover 0.5s ease-in-out alternate infinite;
+    }
 }
 
 @keyframes contatoHover {
@@ -96,9 +108,12 @@ nav {
     color: #D4AF37;
 
 }
- #contato, .navItem{
+
+#contato,
+.navItem {
     font-size: larger;
- }
+}
+
 @media (max-width: 450px) {
     .menu {
         display: flex;

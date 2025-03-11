@@ -1,57 +1,33 @@
+@import url(homeChamada.css);
+@import url(homeServicos.css);
+@import url(homeSideScroll.css);
 .first {
-    padding: 0;
-    margin: 0;
-}
-
-.frase {
     height: 100vh;
     width: 100%;
-
     background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    /* background-color: #F5EFE6; */
 }
 
 #frase {
-    position: relative;
-    top: 20%;
     font-size: 5rem;
     text-align: center;
+    /* TODO arrumar tirar essa porcentagem meme e esse rem que nem sei o que é*/
+    
     padding: 0 10%;
-}
-
-.captura {
-    height: 100vh;
-}
-
-.pin-wrap {
-    background: #ebeff5;
-    color: #333;
+    color: #C2A14B;
 }
 
 
-.motivos {
-    display: flex;
-    flex-direction: row;
-}
-
-
-.motivo {
-    width: 100vw;
-    height: 100vh;
-}
-
-.escolhas {
-    background: #b7b6b6;
+.frase {
+    background: #eff1ef;
 }
 
 .titulo {
     font-size: xx-large;
-}
-
-section.chamada{
-    background: #aaff72;
-    border: none;
-    width: 100%;
-    padding: 100px;
 }
 
 ::-webkit-scrollbar {
