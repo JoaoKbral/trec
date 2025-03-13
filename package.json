@@ -10,7 +10,6 @@
     "gsap": "^3.12.5"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.13.3",
-    "parcel": "^2.13.3"
+    "@parcel/transformer-sass": "^2.13.3"
   }
 }

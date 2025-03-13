@@ -1,6 +1,10 @@
 @import url(homeChamada.css);
 @import url(homeServicos.css);
 @import url(homeSideScroll.css);
+@import url(homeCaptura.css);
+@import url(homeFrase.css);
+
+
 .first {
     height: 100vh;
     width: 100%;
@@ -12,30 +16,12 @@
     /* background-color: #F5EFE6; */
 }
 
-#frase {
-    font-size: 5rem;
-    text-align: center;
-    /* TODO arrumar tirar essa porcentagem meme e esse rem que nem sei o que é*/
-    
-    padding: 0 10%;
-    color: #C2A14B;
-}
-
-
-.frase {
-    background: #eff1ef;
-}
-
-.titulo {
-    font-size: xx-large;
-}
-
 ::-webkit-scrollbar {
     display: none
 }
 
 @media (max-width: 450px) {
     .alvo {
-            font-size: 40px;
+        font-size: 40px;
     }
 }

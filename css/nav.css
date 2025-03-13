@@ -1,3 +1,14 @@
+.navWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 10px 30px;
+    border-radius: 1000px;
+}
+
 nav {
     z-index: 50;
     position: fixed;
@@ -12,17 +23,6 @@ nav {
 
 }
 
-.menuWrapper{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-    margin: 0 auto;
-    background: #ebfdeb;
-    padding: 10px 30px;
-    border-radius: 1000px;
-}
-
 .logo {
     position: relative;
 
@@ -35,9 +35,9 @@ nav {
     list-style: none;
     font-size: large;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     padding: 3px 15px;
     border-radius: 1000px;
     /* background: white; */
@@ -73,7 +73,7 @@ nav {
 .led {
     width: 10px;
     height: 10px;
-    margin: 0 3px 0 5px;
+    /* margin: 0 3px 0 5px; */
     border-radius: 50%;
     border: 1px solid black;
     background: #930101;

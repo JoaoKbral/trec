@@ -1,0 +1,14 @@
+#frase {
+    font-size: 5rem;
+    text-align: center;
+    /* TODO arrumar tirar essa porcentagem meme e esse rem que nem sei o que é*/
+
+    padding: 0 10%;
+    /* color: #C2A14B; */
+    /* color: #fcfcfc; */
+}
+
+
+.frase {
+    background: #eff1ef;
+}

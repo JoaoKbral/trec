@@ -1,0 +1,18 @@
+footer {
+    background-color: #112817;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.rede {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.redeLogo {
+    filter: invert(1);
+}

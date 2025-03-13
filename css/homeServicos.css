@@ -1,10 +1,11 @@
 .servicos {
     display: flex;
-    background: rgba(25, 240, 57, 0.451);
+    /* background: rgba(25, 240, 57, 0.451); */
+    /* background: #eff1ef;
+    background: #112817; */
     flex-direction: column;
     gap: 20px;
     padding: 20px 0;
-
 }
 
 .servico{
@@ -13,8 +14,10 @@
     width: 100%;
     gap: 10px;
     padding: 0 200px;
+
     img{
         height: 300px;
+        display: none;
     }
 }
 
@@ -23,6 +26,7 @@
     flex-direction: row-reverse;
 }
 
-.servico .sobre{
+.descricaoServico{
     text-align: justify;
+    font-size: 1.5rem;
 }
