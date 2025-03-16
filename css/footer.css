@@ -1,4 +1,5 @@
 footer {
+    position: relative;
     background-color: #112817;
     color: white;
     display: flex;

@@ -6,27 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="../css/padrao.css">
-    <link rel="stylesheet" href="../css/sobre.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/homeServicos.css">
+    <link rel="stylesheet" href="../css/sobre.css">
 
+    <style>
+        .n{
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
     <nav>
-        <a class="logo" href="../html/home.html"><img src="../imgs/t rec - branco - nome lateral.png" alt="logo"></a>
-        <ul class="menu">
-            <li class="navItem"><a href="../html/home.html">Home</a></li>
-            <li class="navItem"><a href="../html/sobre.html">Quem somos</a></li>
-            <li class="navItem"><a href="../html/ensaios.html">Nossos trabalhos</a></li>
-            <li class="navItem"><a href="../html/servicos.html">Valores</a></li>
-        </ul>
-        <div class="contato menu">
-            <p class="led"></p><a id="contato" href="../html/contato.html">Entre em contato</a>
+        <div class="navWrapper">
+            <a class="logo" href="../html/home.html"><img src="../imgs/t rec - branco - nome lateral.png"
+                    alt="logo"></a>
+            <ul class="menu">
+                <li class="navItem"><a href="../html/home.html">Home</a></li>
+                <li class="navItem"><a href="../html/sobre.html">Quem somos</a></li>
+                <li class="navItem"><a href="../html/ensaios.html">Nossos trabalhos</a></li>
+                <li class="navItem"><a href="../html/servicos.html">Valores</a></li>
+            </ul>
+            <div class="contato menu">
+                <a id="contato" href="../html/contato.html">Entre em contato</a>
+                <p class="led"></p>
+            </div>
         </div>
     </nav>
 
-    <main>
+    <main class="">
         <section class="sobreEmpresa first">
             <div class="logoEmpresa">
                 <!-- <img src="../imgs/t rec - verde sem fundo.png" alt=""> -->
@@ -251,7 +260,6 @@
                     </p>
                 </div>
             </div>
-
         </section>
     </main>
     <footer>

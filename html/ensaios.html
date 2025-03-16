@@ -14,21 +14,25 @@
 
 <body>
     <nav>
-        <a class="logo" href="../html/home.html"><img src="../imgs/t rec - branco - nome lateral.png" alt="logo"></a>
-        <ul class="menu">
-            <li class="navItem"><a href="../html/home.html">Home</a></li>
-            <li class="navItem"><a href="../html/sobre.html">Quem somos</a></li>
-            <li class="navItem"><a href="../html/ensaios.html">Nossos trabalhos</a></li>
-            <li class="navItem"><a href="../html/servicos.html">Valores</a></li>
-        </ul>
-        <div class="contato menu">
-            <p class="led"></p><a id="contato" href="../html/contato.html">Entre em contato</a>
+        <div class="navWrapper">
+            <a class="logo" href="../html/home.html"><img src="../imgs/t rec - branco - nome lateral.png"
+                    alt="logo"></a>
+            <ul class="menu">
+                <li class="navItem"><a href="../html/home.html">Home</a></li>
+                <li class="navItem"><a href="../html/sobre.html">Quem somos</a></li>
+                <li class="navItem"><a href="../html/ensaios.html">Nossos trabalhos</a></li>
+                <li class="navItem"><a href="../html/servicos.html">Valores</a></li>
+            </ul>
+            <div class="contato menu">
+                <a id="contato" href="../html/contato.html">Entre em contato</a>
+                <p class="led"></p>
+            </div>
         </div>
     </nav>
 
     <main>
-        <section>
-            <div class="selecionarTipo first">
+        <section class="first">
+            <div class="selecionarTipo">
                 <div class="botao">
                     <a href="#">
                         <h1 onclick="()=>{console.log('hi');}">Empresas</h1>
@@ -41,6 +45,9 @@
                 </div>
 
             </div>
+        </section>
+        <section class="fotos">
+
             <div class="fotosEmpresas">
 
                 <!-- <div>s</div>

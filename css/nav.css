@@ -1,14 +1,3 @@
-.navWrapper {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-    margin: 0 auto;
-    background: #ffffff;
-    padding: 10px 30px;
-    border-radius: 1000px;
-}
-
 nav {
     z-index: 50;
     position: fixed;
@@ -22,6 +11,17 @@ nav {
     margin: 0 auto;
 
 }
+.navWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 10px 30px;
+    border-radius: 1000px;
+}
+
 
 .logo {
     position: relative;
