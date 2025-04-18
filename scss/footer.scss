@@ -1,0 +1,37 @@
+footer{
+    background-image: url(../../imgs/teste.jpg);
+}
+
+.footer {
+    padding: 20px 0;
+    /* background-color: #23292516; */
+    background-blend-mode: difference;
+    width: 100%;
+    backdrop-filter: invert(80%);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.rede {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+}
+
+.gov {
+    ul {
+        list-style: none;
+    }
+}
+
+.redeLogo {
+    filter: invert(1);
+}

@@ -1,0 +1,29 @@
+.sobreCeos-2 {
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    background: rgb(204, 251, 183);
+
+}
+
+.funcionario {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-evenly;
+
+    gap: 30px;
+}
+
+.funcionario.funcionario:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.imgFunc {
+    height: 500px;
+
+    img {
+        height: 100%;
+    }
+}

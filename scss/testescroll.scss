@@ -13,7 +13,7 @@
   position: absolute;
   opacity: 0;
   z-index: 1;
-  background: rgba(222, 222, 222, 0.75);
+  background: rgba(222, 222, 222, .75);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -49,8 +49,6 @@
   left: 0;
   width: 8px;
   height: 8px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, .5);
   border-radius: 4px;
 }
-
-/*# sourceMappingURL=testescroll.css.map */

@@ -1,42 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap');
-
-:root {
-    --base-color-olive: #6b8e23;
-    --base-color-moss: #556b2f;
-    --base-color-trec: #204C2C;
-}
-
+@import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 html::selection {
-    background: #849588;
-    color: white;
+  background: #849588;
+  color: white;
 }
 
 /* html::-moz-selection{ */
-
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Signika Negative";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Signika Negative";
 }
 
 section > * {
-    max-width: 1440px;
-    margin: 0 auto;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 main {
-    width: 100vw;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .first {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 footer {
-    display: flex;
+  display: flex;
 }
+
+/*# sourceMappingURL=padrao.css.map */

@@ -1,31 +1,14 @@
-@import url("../node_modules/@glidejs/glide/dist/css/glide.core.css");
-@import url("../node_modules/@glidejs/glide/dist/css/glide.theme.css");
+@use "sobreEmpresa";
+@use "sobreFuncs";
 
-.sobreEmpresa {
-    width: 100vw;
-
-    padding: 20px 0;
-    padding-top: 100px;
-    display: flex;
-    align-items: center;
-    /* justify-items: center; */
-    flex-direction: column;
-
-    div {
-        width: 60vw;
-    }
-}
-
-.logoEmpresa {
-    margin: 0 auto;
-    display: none;
-}
+@import url("../../node_modules/@glidejs/glide/dist/css/glide.core.css");
+@import url("../../node_modules/@glidejs/glide/dist/css/glide.theme.css");
 
 .sobreCeos {
-    /* background-color: rgb(211, 212, 212); */
     background: rgb(204, 251, 183);
     height: 80vh;
     display: flex;
+    display: none;
     justify-content: center;
 }
 
@@ -39,7 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40dvw;
+    width: 100dvw;
     height: 80dvh;
     perspective: 1000px;
 }

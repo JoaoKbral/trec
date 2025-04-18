@@ -1,0 +1,359 @@
+@import url("../../node_modules/@glidejs/glide/dist/css/glide.core.css");
+@import url("../../node_modules/@glidejs/glide/dist/css/glide.theme.css");
+.sobreEmpresa {
+  width: 100vw;
+  padding: 20px 0;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  background-color: #204c2c;
+}
+.sobreEmpresa div {
+  width: 100dvw;
+}
+
+div.logoEmpresa {
+  height: 350px;
+  width: 400px;
+  margin: 0 auto;
+  background-image: url("../../imgs/logo - t rec 2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+div.logoEmpresa img {
+  display: none;
+  height: 100%;
+}
+
+.logoEmpresa::after,
+.logoEmpresa::before {
+  content: "";
+  background-image: url("../../imgs/logo - t rec 2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 350px;
+  overflow: hidden;
+  filter: drop-shadow(0 0 5px #204c2c);
+}
+
+.logoEmpresa::after {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  animation: noise-anim-2 6s 3 linear alternate-reverse forwards;
+  mix-blend-mode: multiply;
+}
+
+.logoEmpresa::before {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  animation: noise-anim-3 2s 9 linear alternate-reverse forwards;
+  mix-blend-mode: multiply;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip-path: inset(99% 39% 2% 2%);
+  }
+  5% {
+    clip-path: inset(38% 73% 22% 6%);
+  }
+  10% {
+    clip-path: inset(44% 31% 41% 34%);
+  }
+  15% {
+    clip-path: inset(22% 77% 18% 23%);
+  }
+  20% {
+    clip-path: inset(62% 86% 39% 6%);
+  }
+  25% {
+    clip-path: inset(94% 65% 4% 18%);
+  }
+  30% {
+    clip-path: inset(23% 27% 20% 30%);
+  }
+  35% {
+    clip-path: inset(26% 97% 7% 1%);
+  }
+  40% {
+    clip-path: inset(66% 30% 21% 26%);
+  }
+  45% {
+    clip-path: inset(87% 4% 8% 78%);
+  }
+  50% {
+    clip-path: inset(69% 66% 16% 6%);
+  }
+  55% {
+    clip-path: inset(73% 63% 20% 13%);
+  }
+  60% {
+    clip-path: inset(77% 33% 7% 60%);
+  }
+  65% {
+    clip-path: inset(82% 97% 3% 4%);
+  }
+  70% {
+    clip-path: inset(32% 18% 53% 76%);
+  }
+  75% {
+    clip-path: inset(71% 3% 25% 26%);
+  }
+  80% {
+    clip-path: inset(33% 68% 17% 5%);
+  }
+  85% {
+    clip-path: inset(13% 28% 5% 69%);
+  }
+  90% {
+    clip-path: inset(90% 39% 8% 21%);
+  }
+  95% {
+    clip-path: inset(6% 4% 85% 74%);
+  }
+  100% {
+    clip-path: inset(27% 52% 71% 6%);
+  }
+}
+@keyframes noise-anim-2 {
+  0% {
+    opacity: 0;
+    clip-path: none;
+  }
+  0.001% {
+    opacity: 1;
+    clip-path: inset(0 0);
+  }
+  5% {
+    clip-path: inset(50% 0 7% 0);
+  }
+  10% {
+    clip-path: inset(81% 0 8% 0);
+  }
+  15% {
+    clip-path: inset(48% 0 18% 0);
+  }
+  20% {
+    clip-path: inset(94% 0 1% 0);
+  }
+  25% {
+    clip-path: inset(22% 0 66% 0);
+  }
+  30% {
+    clip-path: inset(32% 0 53% 0);
+  }
+  35% {
+    clip-path: inset(55% 0 38% 0);
+  }
+  40% {
+    clip-path: inset(77% 0 6% 0);
+  }
+  45% {
+    clip-path: inset(18% 0 29% 0);
+  }
+  50% {
+    clip-path: inset(86% 0 6% 0);
+  }
+  55% {
+    clip-path: inset(46% 0 50% 0);
+  }
+  60% {
+    clip-path: inset(4% 0 44% 0);
+  }
+  65% {
+    clip-path: inset(88% 0 13% 0);
+  }
+  70% {
+    clip-path: inset(51% 0 5% 0);
+  }
+  75% {
+    clip-path: inset(35% 0 12% 0);
+  }
+  80% {
+    clip-path: inset(10% 0 17% 0);
+  }
+  85% {
+    clip-path: inset(99% 0 1% 0);
+  }
+  90% {
+    clip-path: inset(90% 0 9% 0);
+  }
+  95% {
+    clip-path: inset(68% 0 16% 0);
+  }
+  100% {
+    clip-path: inset(37% 0 40% 0);
+  }
+}
+@keyframes noise-anim-3 {
+  0% {
+    opacity: 0;
+    clip-path: none;
+  }
+  0.001% {
+    opacity: 1;
+    clip-path: inset(0 0);
+  }
+  5% {
+    clip-path: inset(40% 0 26% 0);
+  }
+  10% {
+    clip-path: inset(63% 0 34% 0);
+  }
+  15% {
+    clip-path: inset(20% 0 57% 0);
+  }
+  20% {
+    clip-path: inset(21% 0 79% 0);
+  }
+  25% {
+    clip-path: inset(58% 0 38% 0);
+  }
+  30% {
+    clip-path: inset(35% 0 56% 0);
+  }
+  35% {
+    clip-path: inset(42% 0 46% 0);
+  }
+  40% {
+    clip-path: inset(41% 0 57% 0);
+  }
+  45% {
+    clip-path: inset(49% 0 32% 0);
+  }
+  50% {
+    clip-path: inset(93% 0 1% 0);
+  }
+  55% {
+    clip-path: inset(81% 0 12% 0);
+  }
+  60% {
+    clip-path: inset(27% 0 59% 0);
+  }
+  65% {
+    clip-path: inset(27% 0 57% 0);
+  }
+  70% {
+    clip-path: inset(32% 0 36% 0);
+  }
+  75% {
+    clip-path: inset(69% 0 13% 0);
+  }
+  80% {
+    clip-path: inset(70% 0 27% 0);
+  }
+  85% {
+    clip-path: inset(33% 0 17% 0);
+  }
+  90% {
+    clip-path: inset(43% 0 36% 0);
+  }
+  95% {
+    clip-path: inset(65% 0 21% 0);
+  }
+  100% {
+    clip-path: inset(49% 0 48% 0);
+  }
+}
+.sobreCeos-2 {
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  background: rgb(204, 251, 183);
+}
+
+.funcionario {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.funcionario.funcionario:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.imgFunc {
+  height: 500px;
+}
+.imgFunc img {
+  height: 100%;
+}
+
+.sobreCeos {
+  background: rgb(204, 251, 183);
+  height: 80vh;
+  display: flex;
+  display: none;
+  justify-content: center;
+}
+
+.glide {
+  width: 70vw;
+}
+
+.glide__slide,
+.flip-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100dvw;
+  height: 80dvh;
+  perspective: 1000px;
+}
+
+.descricao {
+  text-align: justify;
+  padding-top: 20px;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img img {
+  width: 100%;
+}
+
+.flip-card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg) rotateZ(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateX(180deg) rotateZ(180deg);
+}
+
+/*# sourceMappingURL=sobre.css.map */

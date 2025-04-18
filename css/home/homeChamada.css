@@ -1,0 +1,43 @@
+section.chamada {
+  /* background: #aaff72; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #eff1ef;
+  border: none;
+  width: 100%;
+  padding: 100px 0;
+  color: #000;
+  font-size: 3rem;
+}
+section.chamada div {
+  margin: 0;
+}
+
+button.contato {
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 20px 80px;
+}
+
+span.especial-1, span.especial-2, span.especial-3 {
+  border-radius: 100px;
+  padding: 1rem 2rem;
+  color: #000;
+}
+
+span.especial-1 {
+  background-color: rgba(255, 255, 0, 0.772);
+}
+
+span.especial-2 {
+  background-color: rgba(127, 255, 212, 0.772);
+}
+
+span.especial-3 {
+  background-color: rgba(210, 105, 30, 0.772);
+}
+
+/*# sourceMappingURL=homeChamada.css.map */

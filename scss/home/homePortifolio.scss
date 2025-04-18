@@ -1,0 +1,81 @@
+.portifolio {
+    width: 100dvw;
+    background: #000;
+}
+/* Styling */
+.slider {
+    --animationSpeed: 80s;
+    --slideWidth: 350px;
+    --slideQuantity: 20;
+
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+
+
+    &::before,
+    &::after {
+        content: "";
+        height: 100px;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+    }
+
+    &::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+
+    &::before {
+        left: 0;
+        top: 0;
+    }
+
+    .slideTrack {
+        pointer-events: none;
+        display: flex;
+        width: calc(var(--slideWidth) * var(--slideQuantity));
+
+    }
+
+    >.toRight {
+
+        animation: toRight var(--animationSpeed) linear 100ms infinite;
+    }
+
+    >.toLeft {
+
+        animation: toLeft var(--animationSpeed) linear 100ms infinite;
+    }
+
+    .slide {
+        width: var(--slideWidth);
+    }
+
+}
+
+/* Animation */
+@keyframes toLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-1* var(--slideWidth) * var(--slideQuantity) / 2))
+    }
+}
+
+@keyframes toRight {
+    0% {
+        transform: translateX(calc(-1* var(--slideWidth) * var(--slideQuantity) / 2))
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

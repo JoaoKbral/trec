@@ -1,95 +1,91 @@
 section {
-    width: 60%;
-    margin: 0 auto;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .selecaoPacote {
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 7px;
-
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 7px;
 }
 
 .tipoPacote {
-
-    background: rgb(0, 0, 0);
-    border-radius: 7px;
-    width: 100%;
-    text-align: center;
-
-    color: #ffffff;
-    a {
-        text-decoration: none;
-        color: #ffffff;
-    }
+  background: rgb(0, 0, 0);
+  border-radius: 7px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+.tipoPacote a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .eventos,
 .empresas {
-    width: 70vw;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 70vw;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .empresas {
-    display: none;
+  display: none;
 }
 
 .pacotes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 5px;
-    gap: 15px;
-    width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5px;
+  gap: 15px;
+  width: fit-content;
+}
+
+.pacote {
+  background: #98d3a8;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 7px;
 }
 
 .valor {
-    padding: 20px;
-    background: rgb(13, 114, 4);
-    width: 20vw;
-    height: 20vw;
-    border: 2px solid black;
-    border-radius: 7px;
-    color: #ffffff;
-    a {
-        text-decoration: none;
-        color: #ffffff;
-
-    }
-
-    display: flex;
-    align-items: start;
-    justify-content: space-evenly;
-    flex-direction: column;
+  width: 20vw;
+  height: 20vw;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.valor a {
+  text-decoration: none;
 }
 
 .conteudo {
-    /* padding: 0 0 20px 0; */
-    
-    width: 20vw;
-    list-style-position: inside;
-    font-size: 20px;
-    line-height: 1.5;
-    ul {
-        
-        list-style-type: none;
-    }
+  /* padding: 0 0 20px 0; */
+  width: 100%;
+  list-style-position: inside;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.conteudo ul {
+  list-style-type: none;
 }
 
-.tipoPacote:hover{
-    filter: brightness(0.7);
+.tipoPacote:hover {
+  filter: brightness(0.7);
 }
 
-a.tipoPacote{
-    padding: 15px;
-    border-radius: 1000px;
-    border: none;
-    font-size: 20px;
+a.tipoPacote {
+  padding: 15px;
+  border-radius: 1000px;
+  border: none;
+  font-size: 20px;
 }
 
 .visivel {
-    display: flex;
+  display: flex;
 }
+
+/*# sourceMappingURL=servicos.css.map */

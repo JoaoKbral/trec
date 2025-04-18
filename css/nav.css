@@ -1,123 +1,118 @@
 nav {
-    z-index: 50;
-    position: fixed;
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-    height: 100px;
-    margin: 0 auto;
-
+  z-index: 50;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  height: 100px;
+  margin: 0 auto;
 }
+
 .navWrapper {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-    margin: 0 auto;
-    background: #ffffff;
-    padding: 10px 30px;
-    border-radius: 1000px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 10px 30px;
+  border-radius: 1000px;
 }
-
 
 .logo {
-    position: relative;
-
-    img {
-        width: 120px;
-    }
+  position: relative;
+}
+.logo img {
+  width: 120px;
 }
 
 .menu {
-    list-style: none;
-    font-size: large;
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    gap: 10px;
-    padding: 3px 15px;
-    border-radius: 1000px;
-    /* background: white; */
+  list-style: none;
+  font-size: 1.5rem;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 10px;
+  padding: 3px 15px;
+  border-radius: 1000px;
+  /* background: white; */
 }
 
 .navItem {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    padding: 3px 10px;
-    border-radius: 1000px;
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 1000px;
+}
+.navItem a {
+  text-decoration: none;
+  color: black;
 }
 
 .navItem:hover {
-    transition: 0.2s linear;
-    background: rgb(241, 241, 241);
+  transition: 0.2s linear;
+  background: rgb(241, 241, 241);
 }
 
 .contato {
-    width: fit-content;
-    height: fit-content;
-    border: 1px solid #facf41;
-    border-radius: 1000px;
-    padding: 10px;
-    background: #ffd752;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid #facf41;
+  border-radius: 1000px;
+  padding: 10px;
+  background: #ffd752;
 }
 
 .led {
-    width: 10px;
-    height: 10px;
-    /* margin: 0 3px 0 5px; */
-    border-radius: 50%;
-    border: 1px solid black;
-    background: #930101;
+  width: 10px;
+  height: 10px;
+  /* margin: 0 3px 0 5px; */
+  border-radius: 50%;
+  border: 1px solid black;
+  background: #930101;
 }
 
 .contato:hover {
-    transition: 0.2s linear;
-    background: #f9c002;
-
-    .led {
-        animation: contatoHover 0.5s ease-in-out alternate infinite;
-    }
+  transition: 0.2s linear;
+  background: #f9c002;
+}
+.contato:hover .led {
+  animation: contatoHover 0.5s ease-in-out alternate infinite;
 }
 
 @keyframes contatoHover {
-    from {
-        background: #930101;
-    }
-
-    to {
-        background: #ff0000;
-        filter: brightness(1.3);
-    }
+  from {
+    background: #930101;
+  }
+  to {
+    background: #ff0000;
+    filter: brightness(1.3);
+  }
 }
-
 #contato {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .destaque {
-    color: #D4AF37;
-
+  color: #D4AF37;
 }
 
 #contato,
 .navItem {
-    font-size: larger;
+  font-size: larger;
 }
 
 @media (max-width: 450px) {
-    .menu {
-        display: flex;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
+  .menu {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
+
+/*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,154 @@
+@use 'sass:math';
+$imgPath: "../../imgs/logo - t rec 2.png";
+$animTime: s;
+
+.sobreEmpresa {
+    width: 100vw;
+
+
+    padding: 20px 0;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+
+    background-color: #204c2c;
+
+    div {
+        width: 100dvw;
+    }
+}
+
+div.logoEmpresa {
+
+    height: 350px;
+    width: 400px;
+    margin: 0 auto;
+
+    background-image: url($imgPath);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    // animation: noise-anim 5s 3 linear alternate backwards;
+
+    img {
+        display: none;
+        height: 100%;
+    }
+}
+
+
+.logoEmpresa::after,
+.logoEmpresa::before {
+    content: "";
+
+    background-image: url($imgPath);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 400px;
+    height: 350px;
+
+
+    overflow: hidden;
+    filter: drop-shadow(0 0 5px #204c2c);
+
+}
+
+.logoEmpresa::after {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    animation: noise-anim-2 6s 3 linear alternate-reverse forwards;
+    mix-blend-mode: multiply;
+}
+
+.logoEmpresa::before {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    animation: noise-anim-3 2s 9 linear alternate-reverse forwards;
+    mix-blend-mode: multiply;
+}
+
+@keyframes noise-anim {
+    $steps: 20;
+
+    @for $i from 0 through $steps {
+        #{math.percentage($i* calc(1/$steps))} {
+            $top: math.random(100);
+            $bottom: math.random(101 - $top);
+            $left: math.random(100);
+            $right: math.random(101- $left);
+            $topWithPercent: $top * 1%;
+            $bottomWithPercent: $bottom * 1%;
+            $leftWithPercent: $left * 1%;
+            $rightWithPercent: $right * 1%;
+            clip-path: inset(#{$topWithPercent} #{$leftWithPercent} #{$bottomWithPercent} #{$rightWithPercent});
+        }
+    }
+}
+
+@keyframes noise-anim-2 {
+    $steps: 20;
+
+    0% {
+        opacity: 0;
+        clip-path: none;
+    }
+
+    0.001% {
+        opacity: 1;
+        clip-path: inset(0 0);
+    }
+
+    @for $i from 1 through $steps {
+        #{math.percentage($i* calc(1/$steps))} {
+            $top: math.random(100);
+            $bottom: math.random(101 - $top);
+            $left: math.random(100);
+            $right: math.random(101- $left);
+            $topWithPercent: $top * 1%;
+            $bottomWithPercent: $bottom * 1%;
+            $leftWithPercent: $left * 1%;
+            $rightWithPercent: $right * 1%;
+            clip-path: inset(#{$topWithPercent} 0 #{$bottomWithPercent} 0);
+        }
+    }
+}
+
+@keyframes noise-anim-3 {
+    $steps: 20;
+
+    0% {
+        opacity: 0;
+        clip-path: none;
+    }
+
+    0.001% {
+        opacity: 1;
+        clip-path: inset(0 0);
+    }
+
+    @for $i from 1 through $steps {
+        #{math.percentage($i* calc(1/$steps))} {
+            $top: math.random(100);
+            $bottom: math.random(101 - $top);
+            $left: math.random(100);
+            $right: math.random(101- $left);
+            $topWithPercent: $top * 1%;
+            $bottomWithPercent: $bottom * 1%;
+            $leftWithPercent: $left * 1%;
+            $rightWithPercent: $right * 1%;
+            clip-path: inset(#{$topWithPercent} 0 #{$bottomWithPercent} 0);
+        }
+    }
+}
