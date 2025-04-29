@@ -2,6 +2,9 @@
 $imgPath: "../../imgs/logo - t rec 2.png";
 $animTime: s;
 
+$logoHeigth: 40dvh;
+$logoWidth: 40dvw;
+
 .sobreEmpresa {
     width: 100vw;
 
@@ -22,8 +25,8 @@ $animTime: s;
 
 div.logoEmpresa {
 
-    height: 350px;
-    width: 400px;
+    height: $logoHeigth;
+    width: $logoWidth;
     margin: 0 auto;
 
     background-image: url($imgPath);
@@ -54,8 +57,8 @@ div.logoEmpresa {
     background-repeat: no-repeat;
     background-position: center;
 
-    width: 400px;
-    height: 350px;
+    width: $logoWidth;
+    height: $logoHeigth;
 
 
     overflow: hidden;
@@ -135,7 +138,7 @@ div.logoEmpresa {
 
     0.001% {
         opacity: 1;
-        clip-path: inset(0 0);
+        clip-path: inset(0 0);  
     }
 
     @for $i from 1 through $steps {

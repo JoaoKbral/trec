@@ -15,8 +15,8 @@
 }
 
 div.logoEmpresa {
-  height: 350px;
-  width: 400px;
+  height: 40dvh;
+  width: 40dvw;
   margin: 0 auto;
   background-image: url("../../imgs/logo - t rec 2.png");
   background-size: contain;
@@ -39,8 +39,8 @@ div.logoEmpresa img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 400px;
-  height: 350px;
+  width: 40dvw;
+  height: 40dvh;
   overflow: hidden;
   filter: drop-shadow(0 0 5px #204c2c);
 }
@@ -63,67 +63,67 @@ div.logoEmpresa img {
 
 @keyframes noise-anim {
   0% {
-    clip-path: inset(99% 39% 2% 2%);
+    clip-path: inset(64% 56% 10% 42%);
   }
   5% {
-    clip-path: inset(38% 73% 22% 6%);
+    clip-path: inset(22% 87% 52% 10%);
   }
   10% {
-    clip-path: inset(44% 31% 41% 34%);
+    clip-path: inset(55% 59% 6% 15%);
   }
   15% {
-    clip-path: inset(22% 77% 18% 23%);
+    clip-path: inset(8% 40% 51% 34%);
   }
   20% {
-    clip-path: inset(62% 86% 39% 6%);
+    clip-path: inset(51% 96% 2% 2%);
   }
   25% {
-    clip-path: inset(94% 65% 4% 18%);
+    clip-path: inset(76% 96% 19% 2%);
   }
   30% {
-    clip-path: inset(23% 27% 20% 30%);
+    clip-path: inset(10% 60% 10% 29%);
   }
   35% {
-    clip-path: inset(26% 97% 7% 1%);
+    clip-path: inset(67% 55% 13% 24%);
   }
   40% {
-    clip-path: inset(66% 30% 21% 26%);
+    clip-path: inset(20% 47% 8% 49%);
   }
   45% {
-    clip-path: inset(87% 4% 8% 78%);
+    clip-path: inset(28% 95% 62% 1%);
   }
   50% {
-    clip-path: inset(69% 66% 16% 6%);
+    clip-path: inset(77% 74% 24% 12%);
   }
   55% {
-    clip-path: inset(73% 63% 20% 13%);
+    clip-path: inset(28% 61% 67% 27%);
   }
   60% {
-    clip-path: inset(77% 33% 7% 60%);
+    clip-path: inset(66% 43% 20% 4%);
   }
   65% {
-    clip-path: inset(82% 97% 3% 4%);
+    clip-path: inset(27% 12% 62% 82%);
   }
   70% {
-    clip-path: inset(32% 18% 53% 76%);
+    clip-path: inset(17% 36% 32% 16%);
   }
   75% {
-    clip-path: inset(71% 3% 25% 26%);
+    clip-path: inset(20% 33% 46% 20%);
   }
   80% {
-    clip-path: inset(33% 68% 17% 5%);
+    clip-path: inset(19% 18% 74% 5%);
   }
   85% {
-    clip-path: inset(13% 28% 5% 69%);
+    clip-path: inset(95% 34% 2% 62%);
   }
   90% {
-    clip-path: inset(90% 39% 8% 21%);
+    clip-path: inset(51% 62% 48% 8%);
   }
   95% {
-    clip-path: inset(6% 4% 85% 74%);
+    clip-path: inset(34% 44% 35% 53%);
   }
   100% {
-    clip-path: inset(27% 52% 71% 6%);
+    clip-path: inset(48% 60% 45% 3%);
   }
 }
 @keyframes noise-anim-2 {
@@ -136,64 +136,64 @@ div.logoEmpresa img {
     clip-path: inset(0 0);
   }
   5% {
-    clip-path: inset(50% 0 7% 0);
+    clip-path: inset(17% 0 78% 0);
   }
   10% {
-    clip-path: inset(81% 0 8% 0);
+    clip-path: inset(18% 0 25% 0);
   }
   15% {
-    clip-path: inset(48% 0 18% 0);
+    clip-path: inset(3% 0 21% 0);
   }
   20% {
-    clip-path: inset(94% 0 1% 0);
+    clip-path: inset(78% 0 7% 0);
   }
   25% {
-    clip-path: inset(22% 0 66% 0);
+    clip-path: inset(2% 0 67% 0);
   }
   30% {
-    clip-path: inset(32% 0 53% 0);
-  }
-  35% {
-    clip-path: inset(55% 0 38% 0);
-  }
-  40% {
-    clip-path: inset(77% 0 6% 0);
-  }
-  45% {
-    clip-path: inset(18% 0 29% 0);
-  }
-  50% {
-    clip-path: inset(86% 0 6% 0);
-  }
-  55% {
-    clip-path: inset(46% 0 50% 0);
-  }
-  60% {
-    clip-path: inset(4% 0 44% 0);
-  }
-  65% {
-    clip-path: inset(88% 0 13% 0);
-  }
-  70% {
-    clip-path: inset(51% 0 5% 0);
-  }
-  75% {
-    clip-path: inset(35% 0 12% 0);
-  }
-  80% {
-    clip-path: inset(10% 0 17% 0);
-  }
-  85% {
-    clip-path: inset(99% 0 1% 0);
-  }
-  90% {
     clip-path: inset(90% 0 9% 0);
   }
+  35% {
+    clip-path: inset(85% 0 7% 0);
+  }
+  40% {
+    clip-path: inset(11% 0 29% 0);
+  }
+  45% {
+    clip-path: inset(52% 0 6% 0);
+  }
+  50% {
+    clip-path: inset(68% 0 2% 0);
+  }
+  55% {
+    clip-path: inset(29% 0 6% 0);
+  }
+  60% {
+    clip-path: inset(68% 0 25% 0);
+  }
+  65% {
+    clip-path: inset(48% 0 43% 0);
+  }
+  70% {
+    clip-path: inset(25% 0 24% 0);
+  }
+  75% {
+    clip-path: inset(27% 0 38% 0);
+  }
+  80% {
+    clip-path: inset(20% 0 1% 0);
+  }
+  85% {
+    clip-path: inset(26% 0 26% 0);
+  }
+  90% {
+    clip-path: inset(78% 0 21% 0);
+  }
   95% {
-    clip-path: inset(68% 0 16% 0);
+    clip-path: inset(3% 0 30% 0);
   }
   100% {
-    clip-path: inset(37% 0 40% 0);
+    clip-path: inset(87% 0 13% 0);
   }
 }
 @keyframes noise-anim-3 {
@@ -206,64 +206,64 @@ div.logoEmpresa img {
     clip-path: inset(0 0);
   }
   5% {
-    clip-path: inset(40% 0 26% 0);
+    clip-path: inset(37% 0 53% 0);
   }
   10% {
-    clip-path: inset(63% 0 34% 0);
+    clip-path: inset(50% 0 49% 0);
   }
   15% {
-    clip-path: inset(20% 0 57% 0);
+    clip-path: inset(62% 0 10% 0);
   }
   20% {
-    clip-path: inset(21% 0 79% 0);
+    clip-path: inset(27% 0 61% 0);
   }
   25% {
-    clip-path: inset(58% 0 38% 0);
+    clip-path: inset(87% 0 9% 0);
   }
   30% {
-    clip-path: inset(35% 0 56% 0);
+    clip-path: inset(82% 0 18% 0);
   }
   35% {
-    clip-path: inset(42% 0 46% 0);
+    clip-path: inset(40% 0 7% 0);
   }
   40% {
-    clip-path: inset(41% 0 57% 0);
+    clip-path: inset(44% 0 15% 0);
   }
   45% {
-    clip-path: inset(49% 0 32% 0);
+    clip-path: inset(61% 0 21% 0);
   }
   50% {
-    clip-path: inset(93% 0 1% 0);
+    clip-path: inset(7% 0 21% 0);
   }
   55% {
-    clip-path: inset(81% 0 12% 0);
+    clip-path: inset(89% 0 5% 0);
   }
   60% {
-    clip-path: inset(27% 0 59% 0);
+    clip-path: inset(59% 0 28% 0);
   }
   65% {
-    clip-path: inset(27% 0 57% 0);
+    clip-path: inset(17% 0 34% 0);
   }
   70% {
-    clip-path: inset(32% 0 36% 0);
+    clip-path: inset(33% 0 20% 0);
   }
   75% {
-    clip-path: inset(69% 0 13% 0);
+    clip-path: inset(64% 0 12% 0);
   }
   80% {
-    clip-path: inset(70% 0 27% 0);
+    clip-path: inset(14% 0 74% 0);
   }
   85% {
-    clip-path: inset(33% 0 17% 0);
+    clip-path: inset(33% 0 36% 0);
   }
   90% {
-    clip-path: inset(43% 0 36% 0);
+    clip-path: inset(41% 0 40% 0);
   }
   95% {
-    clip-path: inset(65% 0 21% 0);
+    clip-path: inset(78% 0 17% 0);
   }
   100% {
-    clip-path: inset(49% 0 48% 0);
+    clip-path: inset(79% 0 11% 0);
   }
 }
 .sobreCeos-2 {
@@ -272,6 +272,7 @@ div.logoEmpresa img {
   gap: 20px;
   flex-direction: column;
   background: rgb(204, 251, 183);
+  display: none;
 }
 
 .funcionario {
@@ -281,7 +282,7 @@ div.logoEmpresa img {
   gap: 30px;
 }
 
-.funcionario.funcionario:nth-child(2n) {
+.funcionario:nth-child(2n) {
   flex-direction: row-reverse;
 }
 
@@ -293,15 +294,19 @@ div.logoEmpresa img {
 }
 
 .sobreCeos {
-  background: rgb(204, 251, 183);
-  height: 80vh;
+  background-color: #000;
+  height: 80dvh;
   display: flex;
-  display: none;
   justify-content: center;
+}
+.sobreCeos * {
+  color: #fff;
 }
 
 .glide {
-  width: 70vw;
+  max-width: 1440px;
+  width: 80vw;
+  height: 80dvh;
 }
 
 .glide__slide,
@@ -309,23 +314,9 @@ div.logoEmpresa img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100dvw;
+  width: 100%;
   height: 80dvh;
   perspective: 1000px;
-}
-
-.descricao {
-  text-align: justify;
-  padding-top: 20px;
-}
-
-.img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.img img {
-  width: 100%;
 }
 
 .flip-card-inner {
@@ -338,9 +329,18 @@ div.logoEmpresa img {
   transition: transform 0.7s;
   transform-style: preserve-3d;
 }
+.flip-card-inner .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.flip-card-inner .img img {
+  width: 100%;
+}
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateX(180deg) rotateZ(180deg);
+  transform: rotatey(180deg);
 }
 
 .flip-card-front,
@@ -353,7 +353,21 @@ div.logoEmpresa img {
 }
 
 .flip-card-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transform: rotateX(180deg) rotateZ(180deg);
+}
+.flip-card-back .descricao {
+  text-align: justify;
+  padding-top: 20px;
+}
+
+@media (max-width: 769px) {
+  .glide {
+    width: 90dvw;
+  }
 }
 
 /*# sourceMappingURL=sobre.css.map */

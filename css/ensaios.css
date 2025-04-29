@@ -1,13 +1,18 @@
+main {
+  background-color: #eff1ef;
+}
+
 section {
   width: 80%;
   margin: 0 auto;
 }
 
 .selecionarTipo {
+  padding: 10px 20px;
+  background-color: #112817;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-top: 20px;
   gap: 4px;
 }
 

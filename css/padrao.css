@@ -3,6 +3,12 @@
   display: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html::selection {
   background: #849588;
   color: white;
@@ -17,13 +23,11 @@ html::selection {
 }
 
 section > * {
-  max-width: 1440px;
   margin: 0 auto;
 }
 
-main {
-  width: 100vw;
-  overflow-x: hidden;
+body, main {
+  width: 100dvw;
 }
 
 .first {

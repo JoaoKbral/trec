@@ -10,20 +10,23 @@ nav {
   height: 100px;
   margin: 0 auto;
 }
+.menu-toggle {
+  display: none;
+}
 
 .navWrapper {
   display: flex;
   justify-content: center;
-  gap: 20px;
   align-items: center;
+  gap: 20px;
   margin: 0 auto;
   background: #ffffff;
   padding: 10px 30px;
-  border-radius: 1000px;
+  border-radius: 100px;
 }
 
 .logo {
-  position: relative;
+  display: flex;
 }
 .logo img {
   width: 120px;
@@ -37,7 +40,6 @@ nav {
   align-items: center;
   gap: 10px;
   padding: 3px 15px;
-  border-radius: 1000px;
   /* background: white; */
 }
 
@@ -45,8 +47,10 @@ nav {
   display: flex;
   height: 100%;
   align-items: center;
+  justify-content: center;
+  flex-grow: 1;
   padding: 3px 10px;
-  border-radius: 1000px;
+  text-align: left;
 }
 .navItem a {
   text-decoration: none;
@@ -59,6 +63,7 @@ nav {
 }
 
 .contato {
+  font-size: 1.5rem;
   width: fit-content;
   height: fit-content;
   border: 1px solid #facf41;
@@ -83,7 +88,6 @@ nav {
 .contato:hover .led {
   animation: contatoHover 0.5s ease-in-out alternate infinite;
 }
-
 @keyframes contatoHover {
   from {
     background: #930101;
@@ -93,6 +97,7 @@ nav {
     filter: brightness(1.3);
   }
 }
+
 #contato {
   text-decoration: none;
   color: black;
@@ -102,16 +107,121 @@ nav {
   color: #D4AF37;
 }
 
-#contato,
-.navItem {
-  font-size: larger;
-}
-
-@media (max-width: 450px) {
-  .menu {
+@media (max-width: 1080px) {
+  nav {
     display: flex;
+    flex-direction: column;
+    align-items: end;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    width: 50dvw;
+    height: 100dvh;
+    top: 0;
+    right: -50dvw;
+  }
+  nav.reveal {
+    animation: showMenu 1s normal forwards ease;
+  }
+  nav.hide {
+    animation: hideMenu 1s ease 0s 1 normal forwards;
+  }
+  nav .navWrapper,
+  nav .menu {
+    flex-direction: column;
+  }
+  nav .menu {
+    padding-top: 50px;
+    align-items: start;
+    width: 100%;
+  }
+  nav .navWrapper {
+    padding-top: 30px;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px 0 0 10px;
+    margin: 0;
+    justify-content: start;
+  }
+  @keyframes hideMenu {
+    0% {
+      right: 0;
+    }
+    100% {
+      right: -50dvw;
+    }
+  }
+  @keyframes showMenu {
+    0% {
+      right: -50dvw;
+    }
+    100% {
+      right: 0;
+    }
+  }
+  .menu-toggle {
+    position: fixed;
+    top: 34px;
+    right: 30px;
+    display: flex;
+    justify-content: end;
+    z-index: 10000;
+    height: 2rem;
+    padding: 2px;
+    border-radius: 25%;
+    background-clip: border-box;
+    transition: right 0.5s;
+  }
+  .menu-toggle svg {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+    display: none;
+  }
+  .menu-toggle svg .menu-icon-stripe {
+    fill: #000;
+  }
+  .menu-toggle svg .menu-icon-x {
+    fill: #000;
+  }
+  .menu-toggle .menu-icon-active {
+    display: flex;
+    align-self: self-end;
+  }
+  .hideIcon {
+    animation: hideIcon 1s ease forwards;
+  }
+  @keyframes hideIcon {
+    from {
+      right: 30px;
+    }
+    to {
+      right: -30px;
+    }
+  }
+  .showIcon {
+    animation: showIcon 1s ease forwards;
+  }
+  @keyframes showIcon {
+    from {
+      right: 30px;
+    }
+    to {
+      right: -30px;
+    }
+  }
+  .contato {
+    font-size: 1.5rem;
+    flex-direction: row;
+  }
+}
+@media (max-width: 426px) {
+  nav > .navWrapper {
+    width: 100%;
+  }
+  .menu-toggle {
+    display: flex;
+    justify-content: center;
   }
 }
 

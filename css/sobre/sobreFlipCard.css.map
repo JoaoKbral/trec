@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"sobreFlipCard.css"}
+{"version":3,"sourceRoot":"","sources":["../../scss/sobre/sobreFlipCard.scss"],"names":[],"mappings":"AAAQ;AACA;AAER;EAEI;EACA;EACA;EAEA;;AAEA;EACI;;;AAIR;EACI;EACA;EACA;;;AAGJ;AAAA;EAEI;EACA;EACA;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AACA;EACI;;;AAKZ;EACI;;;AAGJ;AAAA;EAEI;EACA;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;;;AAIR;EACI;IACI","file":"sobreFlipCard.css"}

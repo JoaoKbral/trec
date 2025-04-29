@@ -5,8 +5,8 @@ import { ScrollTrigger } from "../node_modules/gsap/ScrollTrigger.js";
 gsap.registerPlugin(ScrollTrigger);
 
 const horizontalSection = document.querySelector(".horizontal")
-let thisPinWrap = horizontalSection.querySelector('.pin-wrap');
-let thisAnimWrap = thisPinWrap.querySelector('.animation-wrap');
+const thisPinWrap = horizontalSection.querySelector('.pin-wrap');
+const thisAnimWrap = thisPinWrap.querySelector('.animation-wrap');
 
 let getToValue = () => -(thisAnimWrap.scrollWidth - window.innerWidth);
 
@@ -19,17 +19,12 @@ gsap.fromTo(thisAnimWrap, {
   scrollTrigger: {
     trigger: horizontalSection,
     start: "top top",
-    end: () => -getToValue(),
+    end: () => thisAnimWrap.scrollWidth > 3000 ? (-1 * getToValue()) : 2500,
+    // end: ()=> -getToValue(), 
     pin: thisPinWrap,
     // anticipatePin: 1,
     scrub: true,
     //markers: true,
-
-  }
-});
-
-gsap.to(".captura", {
-  snap: {
 
   }
 });

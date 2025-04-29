@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de Fotografias</title>
+  <style>
+    :root {
+      --primary: #204c2c;
+      --primary-content: #98d3a8;
+      --primary-dark: #112817;
+      --primary-light: #2f7041;
+      --secondary: #202a4c;
+      --secondary-content: #98a5d3;
+      --secondary-dark: #111628;
+      --secondary-light: #2f3e70;
+      --background: #eff1ef;
+      --foreground: #fbfbfb;
+      --border: #dde2de;
+      --copy: #232925;
+      --copy-light: #5e6e63;
+      --copy-lighter: #849588;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background);
+      color: var(--copy);
+    }
+
+    header {
+      background-color: var(--primary);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header nav a {
+      color: var(--primary-content);
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav a:hover {
+      color: var(--primary-light);
+    }
+
+    .hero {
+      background: linear-gradient(rgba(17, 40, 23, 0.6), rgba(17, 40, 23, 0.6)), url('banner.jpg') center/cover no-repeat;
+      color: var(--foreground);
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 1rem 0 2rem;
+      color: var(--copy-light);
+    }
+
+    .hero button {
+      background-color: var(--primary);
+      color: var(--primary-content);
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: var(--primary-light);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .about, .services, .portfolio, .testimonials {
+      background: var(--foreground);
+      margin-bottom: 2rem;
+      border-radius: 0.5rem;
+      padding: 2rem;
+    }
+
+    .services .card, .testimonials .card {
+      background: var(--background);
+      border: 1px solid var(--border);
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 0.5rem;
+    }
+
+    .cta {
+      background-color: var(--primary);
+      color: var(--primary-content);
+      text-align: center;
+      padding: 3rem 2rem;
+      border-radius: 0.5rem;
+    }
+
+    .cta button {
+      background-color: var(--secondary);
+      color: var(--secondary-content);
+      border: none;
+      padding: 0.8rem 2rem;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background-color: var(--secondary-light);
+    }
+
+    footer {
+      background-color: var(--secondary-dark);
+      color: var(--secondary-content);
+      text-align: center;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Fotografias</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="#">Portfólio</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Capturamos Momentos Inesquecíveis</h1>
+    <p>Ensaios fotográficos, eventos e muito mais.</p>
+    <button>Veja Nosso Portfólio</button>
+  </section>
+
+  <section class="about">
+    <h2>Sobre Nós</h2>
+    <p>Somos apaixonados por eternizar momentos especiais através da fotografia profissional.</p>
+  </section>
+
+  <section class="services">
+    <h2>Serviços</h2>
+    <div class="card">
+      <h3>Ensaios</h3>
+      <p>Fotografias únicas para eternizar suas melhores fases.</p>
+    </div>
+    <div class="card">
+      <h3>Casamentos</h3>
+      <p>Registros emocionantes do seu grande dia.</p>
+    </div>
+    <div class="card">
+      <h3>Eventos</h3>
+      <p>Documentamos todos os detalhes dos seus eventos.</p>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h2>Portfólio</h2>
+    <p>Galeria dinâmica de fotos capturadas por nossa equipe.</p>
+  </section>
+
+  <section class="testimonials">
+    <h2>Depoimentos</h2>
+    <div class="card">
+      <p>"Incrível! As fotos ficaram perfeitas."</p>
+      <p><strong>- Cliente Satisfeito</strong></p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Vamos Fotografar?</h2>
+    <p>Entre em contato conosco e agende sua sessão!</p>
+    <button>Fale Conosco</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Fotografias. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
