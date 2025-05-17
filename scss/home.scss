@@ -1,5 +1,16 @@
 @use 'sass:math';
 
+.scroll-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 2s ease;
+}
+
+.scroll-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .first {
     height: 100dvh;
     width: 100dvw;
@@ -10,7 +21,7 @@
 }
 
 #frase {
-    font-size: 5.5rem;
+    font-size: 5rem;
     text-align: center;
     // TODO arrumar tirar essa porcentagem meme e esse rem que nem sei o que é
     padding: 0 10%;
@@ -19,16 +30,13 @@
 }
 
 
-.frase {
-    background-image: url(../../imgs/teste.jpg);
-    // filter: invert(1);
-    background-color: #98d3a8;
-    background-blend-mode: multiply;
-    #frase{
-
-        font-family: Arial, Helvetica, sans-serif;
-    }
-}
+// .frase {
+//     background-image: url(../../imgs/teste.jpg);
+//     // filter: invert(1);
+//     background-color: #98d3a8;
+//     background-blend-mode: multiply;
+//     // #frase{}
+// }
 
 // slideshow begin
 
@@ -105,109 +113,120 @@
     }
 }
 
-
 //slideshow end
 
 //sidescroll begin
-.captura {
+section.horizontal {
     background-color: #204c2c;
     background-attachment: fixed;
-    background-image: url(../../imgs/logo\ -\ t\ rec\ 3.png);
+    background-image: url("../imgs/logo-t-rec-3.svg");
     background-size: 50dvh;
     background-repeat: no-repeat;
     background-position: center;
-    color: #fff;
-}
 
-section.horizontal {
-    width: 100%;
+    color: #fff;
+    width: 100dvw;
     height: 100%;
-    
+
     overflow-x: hidden;
-    
-    
+
+    &>* {
+        max-width: none;
+    }
+
     .pin-wrap,
     .animation-wrap {
         display: flex;
         position: relative;
         height: 100dvh;
     }
+
+
+    .item {
+        position: relative;
+        padding: 150px 80px;
+        width: 100dvw;
+        height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.7;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        text-transform: uppercase;
+        font-size: 3rem;
+        text-align: center;
+        letter-spacing: -.05em;
+        font-weight: 600;
+    }
 }
 
-section.horizontal .item {
-    position: relative;
-    padding: 150px 80px;
-    width: 100dvw;
-    height: 100dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.7;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    text-transform: uppercase;
-    font-size: 3rem;
-    text-align: center;
-    letter-spacing: -.05em;
-    font-weight: 600;
-}
 //sidescroll end
 
 // TODO arrumar para parar overflow
 section.servicos {
-    background-color: #204c2c;
-
-    display: none;
+    background-attachment: fixed;
+    background-image: url("../imgs/logo-t-rec-3.svg");
+    background-size: 50dvh;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 0;
 
     div.servicos {
-        display: flex;
-        margin: 0 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-content: center;
+        place-items: center;
+        gap: 30px;
+        width: 90%;
+        height: 100%;
+
         /* background: rgba(25, 240, 57, 0.451); */
         /* background: #eff1ef;
         background: #112817; */
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        // gap: 20px;
-        padding: 30px 0;
-        backdrop-filter: invert(1);
     }
 }
-
 
 .servico {
     display: flex;
     align-items: center;
-    width: 100%;
-    padding: 0 200px;
+    justify-content: center;
+    flex-direction: column;
 
+    height: 90dvh;
+    width: 95%;
+
+    border-radius: 65px;
+    background-color: #98d3a8;
 
     img {
         height: 300px;
         border-radius: 50px;
         // display: none;
     }
-}
 
-.servico:nth-child(even) {
-    justify-content: end;
-    flex-direction: row-reverse;
-}
+    &:nth-child(n) {
+        background-color: #98a5d3;
+    }
 
-.descricaoServico {
-    text-align: justify;
-    // line-height: 2rem;
-    padding: 70px 70px;
-    font-size: 3rem;
-}
+    &:nth-child(n+2) {
+        background-color: #98d3a8;
+    }
 
+    .descricaoServico {
+        text-align: center;
+        // line-height: 2rem;
+        padding: 70px 70px;
+        font-size: 3rem;
+    }
+}
 
 span.especial-1,
 span.especial-2,
 span.especial-3 {
-    $random-color:rgba(math.random(255), math.random(255), math.random(255), 0.772);
+    $random-color: rgba(math.random(255), math.random(255), math.random(255), 0.772);
     border-radius: 100px;
     padding: 0.5rem 2rem;
     color: #000;
@@ -228,21 +247,30 @@ span.especial-3 {
 
 section.chamada {
     /* background: #aaff72; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     background: #eff1ef;
     border: none;
     width: 100%;
-    padding: 100px 0;
     color: #000;
-
+    padding: 20px 0;
+    
     font-size: 3rem;
+    
+    div#chamada {
+        padding: 100px 0;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
 
     div {
         margin: 0;
+        background-color: #626862;
+        border-radius: 50px;
+        margin: 0 10px;
     }
 
     button.contato {
@@ -253,15 +281,26 @@ section.chamada {
     }
 }
 
+@media (max-width: 769px) {
+    #frase {
+        font-size: 3.5rem;
+    }
+}
+
 @media (max-width:426px) {
 
+    html,
+    body,
+    main {
+        overflow-x: hidden;
+    }
 
     #frase {
         font-size: 2.5rem;
         padding: 0 5%;
     }
 
-    section.horizontal .item{
+    section.horizontal .item {
         font-size: 1.5rem;
         padding: 0 50px;
     }
@@ -269,10 +308,4 @@ section.chamada {
 
 }
 
-@media (max-width:375px) {
-
-    *{
-        padding: ez 10px;
-    }
-
-}
+@media (max-width:375px) {}

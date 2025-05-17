@@ -1,3 +1,14 @@
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 2s ease;
+}
+
+.scroll-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .first {
   height: 100dvh;
   width: 100dvw;
@@ -8,18 +19,9 @@
 }
 
 #frase {
-  font-size: 5.5rem;
+  font-size: 5rem;
   text-align: center;
   padding: 0 10%;
-}
-
-.frase {
-  background-image: url(../../imgs/teste.jpg);
-  background-color: #98d3a8;
-  background-blend-mode: multiply;
-}
-.frase #frase {
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .slider {
@@ -74,20 +76,20 @@
   }
 }
 
-.captura {
+section.horizontal {
   background-color: #204c2c;
   background-attachment: fixed;
-  background-image: url(../../imgs/logo\ -\ t\ rec\ 3.png);
+  background-image: url("../imgs/logo-t-rec-3.svg");
   background-size: 50dvh;
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
-}
-
-section.horizontal {
-  width: 100%;
+  width: 100dvw;
   height: 100%;
   overflow-x: hidden;
+}
+section.horizontal > * {
+  max-width: none;
 }
 section.horizontal .pin-wrap,
 section.horizontal .animation-wrap {
@@ -95,7 +97,6 @@ section.horizontal .animation-wrap {
   position: relative;
   height: 100dvh;
 }
-
 section.horizontal .item {
   position: relative;
   padding: 150px 80px;
@@ -117,40 +118,48 @@ section.horizontal .item {
 }
 
 section.servicos {
-  background-color: #204c2c;
-  display: none;
+  background-attachment: fixed;
+  background-image: url("../imgs/logo-t-rec-3.svg");
+  background-size: 50dvh;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0;
 }
 section.servicos div.servicos {
-  display: flex;
-  margin: 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  place-items: center;
+  gap: 30px;
+  width: 90%;
+  height: 100%;
   /* background: rgba(25, 240, 57, 0.451); */
   /* background: #eff1ef;
   background: #112817; */
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  padding: 30px 0;
-  backdrop-filter: invert(1);
 }
 
 .servico {
   display: flex;
   align-items: center;
-  width: 100%;
-  padding: 0 200px;
+  justify-content: center;
+  flex-direction: column;
+  height: 90dvh;
+  width: 95%;
+  border-radius: 65px;
+  background-color: #98d3a8;
 }
 .servico img {
   height: 300px;
   border-radius: 50px;
 }
-
-.servico:nth-child(even) {
-  justify-content: end;
-  flex-direction: row-reverse;
+.servico:nth-child(n) {
+  background-color: #98a5d3;
 }
-
-.descricaoServico {
-  text-align: justify;
+.servico:nth-child(n+2) {
+  background-color: #98d3a8;
+}
+.servico .descricaoServico {
+  text-align: center;
   padding: 70px 70px;
   font-size: 3rem;
 }
@@ -161,25 +170,33 @@ span.especial-3 {
   border-radius: 100px;
   padding: 0.5rem 2rem;
   color: #000;
-  background-color: rgba(112, 75, 7, 0.772);
+  background-color: rgba(145, 149, 180, 0.772);
 }
 
 section.chamada {
   /* background: #aaff72; */
+  background: #eff1ef;
+  border: none;
+  width: 100%;
+  color: #000;
+  padding: 20px 0;
+  font-size: 3rem;
+}
+section.chamada div#chamada {
+  padding: 100px 0;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background: #eff1ef;
-  border: none;
-  width: 100%;
-  padding: 100px 0;
-  color: #000;
-  font-size: 3rem;
 }
 section.chamada div {
   margin: 0;
+  background-color: #626862;
+  border-radius: 50px;
+  margin: 0 10px;
 }
 section.chamada button.contato {
   font-size: 2rem;
@@ -187,7 +204,17 @@ section.chamada button.contato {
   padding: 20px 80px;
 }
 
+@media (max-width: 769px) {
+  #frase {
+    font-size: 3.5rem;
+  }
+}
 @media (max-width: 426px) {
+  html,
+  body,
+  main {
+    overflow-x: hidden;
+  }
   #frase {
     font-size: 2.5rem;
     padding: 0 5%;
@@ -195,11 +222,6 @@ section.chamada button.contato {
   section.horizontal .item {
     font-size: 1.5rem;
     padding: 0 50px;
-  }
-}
-@media (max-width: 375px) {
-  * {
-    padding: ez 10px;
   }
 }
 

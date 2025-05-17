@@ -24,10 +24,18 @@ html::selection {
 
 section > * {
   margin: 0 auto;
+  max-width: 1440px;
 }
 
-body, main {
+body,
+main {
+  background-color: #e8e6e6;
   width: 100dvw;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
 }
 
 .first {

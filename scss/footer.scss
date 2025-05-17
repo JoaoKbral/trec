@@ -1,37 +1,107 @@
-footer{
-    background-image: url(../../imgs/teste.jpg);
+footer {
+    background-image: url(../imgs/teste2\ -edit.jpg);
+    background-color: #272727;
+    background-blend-mode: multiply;
+    height: 100dvh;
+    background-size: cover;
+    background-attachment: fixed;
+    // background-size: 50dvh;
+    
+    // background-repeat: no-repeat;
+    // background-position: center;
 }
 
+.footer:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    // opacity: 0.9;
+    z-index: 10;
+}
 .footer {
-    padding: 20px 0;
+    background-image: url("../imgs/logo-t-rec-2.svg");
+    background-size: 50dvh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
     /* background-color: #23292516; */
-    background-blend-mode: difference;
+    // filter:invert(1);
+    
+    // backdrop-filter: invert(100%);
     width: 100%;
-    backdrop-filter: invert(80%);
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
+    height: 100%;
+    padding: 0 5dvw;
 
-}
-
-.rede {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 5px;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    // backdrop-filter: invert(100%);
+    color: #fff;
 
     a {
-        color: white;
-        text-decoration: underline;
+        font-size: 3rem;
+
+        text-decoration: none;
+        color: #fff;
+        // transition: filter 0.5s;
+        filter: brightness(100%);
+
+        &:hover {
+            filter: brightness(50%);
+        }
     }
 }
 
-.gov {
+.acesso-rapido {
+    width: 100%;
+
+    .acesso-rapido-item{
+        padding: 5px 0;
+    }
+}
+
+.footer-foot {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+
+    padding-top: 20px;
+    width: 100%;
+
+}
+
+.redes {
     ul {
-        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
+        height: 48px;
+
+        li,
+        li>a {
+            display: block;
+            height: 48px;
+        }
     }
 }
 
-.redeLogo {
-    filter: invert(1);
+.gov ul {
+    filter: brightness(0.5);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media (max-width:1025px) {
+
+    // .footer-foot,
+    // .acesso-rapido {
+        
+    // }
 }

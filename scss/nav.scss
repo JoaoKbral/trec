@@ -11,7 +11,7 @@ nav {
     margin: 0 auto;
 
     &> {
-        max-width: 1080;
+        max-width: 1080px;
     }
 
 }
@@ -42,7 +42,7 @@ nav {
 
 .menu {
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
@@ -124,6 +124,8 @@ nav {
 
 
 @media (max-width: 1080px) {
+    $transitionTime: 0.7s;
+
     nav {
         display: flex;
         flex-direction: column;
@@ -133,16 +135,18 @@ nav {
 
         width: 50dvw;
         height: 100dvh;
+
         top: 0;
         right: -50dvw;
 
         &.reveal {
-            animation: showMenu 1s normal forwards ease;
+            right: 0;
+            transition: right $transitionTime;
         }
 
         &.hide {
-            //     animation: name duration timing-function delay iteration-count direction fill-mode;
-            animation: hideMenu 1s ease 0s 1 normal forwards;
+            right: -50dvw;
+            transition: right $transitionTime;
         }
 
 
@@ -165,32 +169,19 @@ nav {
             margin: 0;
             justify-content: start;
         }
+    }
 
-        @keyframes hideMenu {
-            0% {
-                right: 0;
-            }
-
-            100% {
-                right: -50dvw;
-            }
-        }
-
-        //  had to duplicate because of a bug -_-
-        @keyframes showMenu {
-            0% {
-                right: -50dvw;
-            }
-
-            100% {
-                right: 0;
-            }
-        }
+    div.container-menu-toggle {
+        width: 100%;
+        height: 72px;
+        background-color: #204c2c;
+        position: absolute;
+        transition: top $transitionTime;
     }
 
     .menu-toggle {
-        position: fixed;
-        top: 34px;
+        position: absolute;
+        top: 20px;
         right: 30px;
         display: flex;
         justify-content: end;
@@ -202,7 +193,7 @@ nav {
         border-radius: 25%;
         // background-color: #fff;
         background-clip: border-box;
-        transition: right 0.5s;
+        transition: right $transitionTime;
 
         svg {
             position: relative;
@@ -227,35 +218,7 @@ nav {
         }
     }
 
-    .hideIcon {
-        animation: hideIcon 1s ease forwards;
-
-        @keyframes hideIcon {
-            from {
-                right: 30px;
-            }
-
-            to {
-                right: -30px;
-            }
-        }
-    }
-
-    .showIcon {
-        animation: showIcon 1s ease forwards;
-
-        @keyframes showIcon {
-            from {
-                right: 30px;
-            }
-
-            to {
-                right: -30px;
-            }
-        }
-    }
-
-    .contato{
+    .contato {
         font-size: 1.5rem;
         flex-direction: row;
     }

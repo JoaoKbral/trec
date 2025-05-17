@@ -34,7 +34,7 @@ nav {
 
 .menu {
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
@@ -119,10 +119,12 @@ nav {
     right: -50dvw;
   }
   nav.reveal {
-    animation: showMenu 1s normal forwards ease;
+    right: 0;
+    transition: right 0.7s;
   }
   nav.hide {
-    animation: hideMenu 1s ease 0s 1 normal forwards;
+    right: -50dvw;
+    transition: right 0.7s;
   }
   nav .navWrapper,
   nav .menu {
@@ -141,25 +143,16 @@ nav {
     margin: 0;
     justify-content: start;
   }
-  @keyframes hideMenu {
-    0% {
-      right: 0;
-    }
-    100% {
-      right: -50dvw;
-    }
-  }
-  @keyframes showMenu {
-    0% {
-      right: -50dvw;
-    }
-    100% {
-      right: 0;
-    }
+  div.container-menu-toggle {
+    width: 100%;
+    height: 72px;
+    background-color: #204c2c;
+    position: absolute;
+    transition: top 0.7s;
   }
   .menu-toggle {
-    position: fixed;
-    top: 34px;
+    position: absolute;
+    top: 20px;
     right: 30px;
     display: flex;
     justify-content: end;
@@ -168,7 +161,7 @@ nav {
     padding: 2px;
     border-radius: 25%;
     background-clip: border-box;
-    transition: right 0.5s;
+    transition: right 0.7s;
   }
   .menu-toggle svg {
     position: relative;
@@ -187,28 +180,6 @@ nav {
   .menu-toggle .menu-icon-active {
     display: flex;
     align-self: self-end;
-  }
-  .hideIcon {
-    animation: hideIcon 1s ease forwards;
-  }
-  @keyframes hideIcon {
-    from {
-      right: 30px;
-    }
-    to {
-      right: -30px;
-    }
-  }
-  .showIcon {
-    animation: showIcon 1s ease forwards;
-  }
-  @keyframes showIcon {
-    from {
-      right: 30px;
-    }
-    to {
-      right: -30px;
-    }
   }
   .contato {
     font-size: 1.5rem;

@@ -1,4 +1,4 @@
-function fun() {
+/* function fun() {
     const doc = document.querySelector("body");
     const nav = document.createElement("nav");
     const ul = document.createElement("ul");
@@ -31,23 +31,25 @@ function navItems(name, href) {
     li.appendChild(a);
 
     return li;
-}
+} */
 
 const toggleIconOpen = document.getElementsByClassName("menu-icon")[0];
 const toggleIconClose = document.getElementsByClassName("menu-icon")[1];
 const menu = document.querySelector("nav");
 const iconsMenu = document.querySelector(".menu-toggle");
 
-toggleIconOpen.addEventListener("click", toggleIcons);
-toggleIconClose.addEventListener("click", toggleIcons);
-// toggleIconOpen.addEventListener("wheelDown", hideIcons, { passive: true });
-// toggleIconClose.addEventListener("scrollDown", hideIcons);
+toggleIconOpen.addEventListener("click", toggleNav);
+toggleIconClose.addEventListener("click", toggleNav);
+
+
+function toggleNav() {
+    toggleIcons();
+    toggleMenu();
+}
 
 function toggleIcons() {
     toggleIconClose.classList.toggle("menu-icon-active")
     toggleIconOpen.classList.toggle("menu-icon-active")
-
-    toggleMenu();
 }
 
 function toggleMenu() {
@@ -59,23 +61,30 @@ function toggleMenu() {
     }
 }
 
+const menuToggleContainer = document.querySelector(".container-menu-toggle")
 let prevYScrollpos = window.pageYOffset;
 let prevXScrollpos = window.pageXOffset;
 
+// window.onmousemove = (e)=> console.log(e.clientX, e.clientY);
 window.onscroll = function () {
     let currentYScrollPos = window.pageYOffset;
     let currentXScrollPos = window.pageYOffset;
+
     if (prevYScrollpos > currentYScrollPos || prevXScrollpos > currentXScrollPos) {
-        iconsMenu.style.right = "30px";
-    } else {
-        // TODO Arrumar para não ficar trocando
-        // toggleIcons();
-        // toggleMenu();
+        iconsMenu.style.right = "20px";
+        menuToggleContainer.style.top = "0";
         toggleIconClose.classList.remove("menu-icon-active");
         toggleIconOpen.classList.add("menu-icon-active");
-        if (menu.classList == "" || menu.classList.contains("hide")) menu.classList = "hide";
-        iconsMenu.style.right = "-50px";
+
+    } else {
+        toggleIconClose.classList.remove("menu-icon-active");
+        toggleIconOpen.classList.add("menu-icon-active");
+
+        menuToggleContainer.style.top = "-72px";
+        iconsMenu.style.right = "-34px";
     }
+    menu.classList = "hide";
+
     prevYScrollpos = currentYScrollPos;
     prevXScrollpos = currentXScrollPos;
 }

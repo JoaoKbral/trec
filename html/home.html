@@ -14,18 +14,20 @@
 </head>
 
 <body>
-    <div class="menu-toggle" role="button" tabindex="0" aria-label="Alternar menu" aria-expanded="true">
-        <svg aria-hidden="true" role="presentation" class="menu-icon menu-icon-active" viewBox="0 0 1000 1000"
-            xmlns="http://www.w3.org/2000/svg">
-            <path class="menu-icon-stripe"
-                d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z">
-            </path>
-        </svg><svg aria-hidden="true" role="presentation" class="menu-icon" viewBox="0 0 1000 1000"
-            xmlns="http://www.w3.org/2000/svg">
-            <path class="menu-icon-x"
-                d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z">
-            </path>
-        </svg>
+    <div class="container-menu-toggle">
+        <div class="menu-toggle" role="button" tabindex="0" aria-label="Alternar menu" aria-expanded="true">
+            <svg aria-hidden="true" role="presentation" class="menu-icon menu-icon-active" viewBox="0 0 1000 1000"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="menu-icon-stripe"
+                    d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z">
+                </path>
+            </svg><svg aria-hidden="true" role="presentation" class="menu-icon" viewBox="0 0 1000 1000"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="menu-icon-x"
+                    d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z">
+                </path>
+            </svg>
+        </div>
     </div>
     <nav>
         <div class="navWrapper">
@@ -33,13 +35,14 @@
                 <li class="navItem"><a class="logo" href="../html/home.html"><img
                             src="../imgs/t rec - branco - nome lateral diminuido.png" alt="logo"></a></li>
                 <!-- <li class="navItem"><a href="../html/home.html">Home</a></li> -->
-                <li class="navItem"><a href="../html/sobre.html">Quem somos</a></li>
-                <li class="navItem"><a href="../html/ensaios.html">Nossos trabalhos</a></li>
+                <li class="navItem"><a href="../html/sobre.html">Sobre</a></li>
+                <li class="navItem"><a href="../html/ensaios.html">Trabalhos</a></li>
                 <li class="navItem"><a href="../html/servicos.html">Valores</a></li>
             </ul>
             <div class="contato menu">
-                <a id="contato" href="https://wa.me/5512991031900?text=Olá, estou gostaria de saber mais sobre o plano relacionado com" target="_blank" rel="noopener noreferrer">Entre em
-                    contato</a>
+                <a id="contato"
+                    href="https://wa.me/5512991031900?text=Olá, estou entrando em contato para saber mais sobre os serviços oferecidos"
+                    target="_blank" rel="noopener noreferrer">Contato</a>
                 <p class="led"></p>
             </div>
         </div>
@@ -130,20 +133,20 @@
         <!-- TODO Apresentação sobre tipos  de serviços-->
         <section class="servicos">
             <div class="servicos">
-                <div class="servico">
+                <div class="servico scroll-hidden">
                     <div class="img"><img src="../imgs/davi.png" alt="#"></div>
                     <div class="descricaoServico">
                         <p><span class="especial-3">Recorde</span> seus momentos <span class="especial-3">de maneira
                                 especial</span></p>
                     </div>
                 </div>
-                <div class="servico">
+                <div class="servico scroll-hidden">
                     <div class="img"><img src="../imgs/raul.png" alt="#"></div>
                     <div class="descricaoServico">
                         <p>Ajudamos sua empresa a crescer</p>
                     </div>
                 </div>
-                <div class="servico">
+                <div class="servico scroll-hidden">
                     <div class="img"><img src="../imgs/ana.png" alt="#"></div>
                     <div class="descricaoServico">
                         <p>Meia bomba</p>
@@ -153,50 +156,132 @@
         </section>
 
         <section class="chamada">
-            <div>
-                <p><span class="especial">Eternize</span> seu momento com a gente</p>
-            </div>
-            <div>
-                <button class="contato">Contato &rarr;</button>
+            <div id="chamada">
+                <div>
+                    <p><span class="especial">Eternize</span> seu momento com a gente</p>
+                </div>
+                <div>
+                    <button class="contato">Contato &rarr;</button>
+                </div>
             </div>
         </section>
     </main>
-    <footer style="display: none;">
+    <footer>
         <!-- informações sobre a empresa -->
         <div class="footer">
-
-
-            <div class="empresa">
-                <img src="../imgs/logo - t rec 2.png" style="height: 100px;">
-            </div>
-            <div class="social">
-                <div class="rede instagram">
-                    <img class="redeLogo" src="../imgs/logoRede/insta.png" alt="">
-                    <a href="https://www.instagram.com/trec_ofc/" target="_blank"
-                        rel="noopener noreferrer">@trec_ofc</a>
-                </div>
-                <div class="rede facebook">
-                    <img class="redeLogo" src="../imgs/logoRede/face2.png" alt="">
-                    <a href="https://www.facebook.com/profile.php?id=61571802004063" target="_blank"
-                        rel="noopener noreferrer">@T-Rec</a>
-                </div>
-                <div class="rede tiktok">
-                    <a href="https://www.tiktok.com/@t.rec_oficial" target="_blank"
-                        rel="noopener noreferrer">@t.rec_oficial</a>
-                </div>
-            </div>
-            <div class="gov">
+            <div class="acesso-rapido">
                 <ul>
-                    <li class="email">trec-sac@trec.com</li>
-                    <li class="cnpj">12.123.123/1234-12</li>
-                    <li class="celular">+55 12 9 9999 9999</li>
+                    <li class="acesso-rapido-item"><a href="../html/servicos.html">Inicio</a></li>
+                    <li class="acesso-rapido-item"><a href="../html/sobre.html">Sobre</a></li>
+                    <li class="acesso-rapido-item"><a href="../html/servicos.html">Valores</a></li>
+                    <li class="acesso-rapido-item"><a href="../html/ensaios.html">Trabalhos</a></li>
+                    <li class="acesso-rapido-item"><a
+                            href="https://wa.me/5512991031900?text=Olá, estou gostaria de saber mais sobre os serviços oferecidos"
+                            target="_blank" rel="noopener noreferrer">Contato</a></li>
                 </ul>
+            </div>
+
+            <div class="footer-foot">
+                <div class="redes">
+                    <!-- svgs source https://www.svgrepo.com/collection/social-media-fill-icons/-->
+                    <ul>
+                        <li class="rede instagram">
+                            <a href="https://www.instagram.com/trec_ofc/" target="_blank" rel="noopener noreferrer">
+                                <svg height="48px" width="48px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" stroke="#fff" stroke-width="0.43200000000000005">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 2C9.284 2 8.944 2.01133 7.87733 2.06C6.81267 2.10867 6.08533 2.278 5.44933 2.52533C4.78267 2.776 4.178 3.16933 3.678 3.67867C3.16948 4.17809 2.77591 4.78233 2.52467 5.44933C2.27867 6.08533 2.10867 6.81333 2.06 7.878C2.012 8.944 2 9.28333 2 12C2 14.7167 2.01133 15.056 2.06 16.1227C2.10867 17.1873 2.278 17.9147 2.52533 18.5507C2.776 19.2173 3.16933 19.822 3.67867 20.322C4.1781 20.8305 4.78234 21.2241 5.44933 21.4753C6.08533 21.722 6.81267 21.8913 7.87733 21.94C8.944 21.9887 9.284 22 12 22C14.716 22 15.056 21.9887 16.1227 21.94C17.1873 21.8913 17.9147 21.722 18.5507 21.4747C19.2173 21.224 19.822 20.8307 20.322 20.3213C20.8305 19.8219 21.2241 19.2177 21.4753 18.5507C21.722 17.9147 21.8913 17.1873 21.94 16.1227C21.9887 15.056 22 14.716 22 12C22 9.284 21.9887 8.944 21.94 7.87733C21.8913 6.81267 21.722 6.08533 21.4747 5.44933C21.2236 4.78204 20.83 4.17755 20.3213 3.678C19.8219 3.16948 19.2177 2.77591 18.5507 2.52467C17.9147 2.27867 17.1867 2.10867 16.122 2.06C15.056 2.012 14.7167 2 12 2ZM12 3.802C14.67 3.802 14.9867 3.812 16.0413 3.86C17.016 3.90467 17.5453 4.06667 17.898 4.20467C18.3647 4.38533 18.698 4.60267 19.048 4.952C19.398 5.302 19.6147 5.63533 19.7953 6.102C19.9327 6.45467 20.0953 6.984 20.14 7.95867C20.188 9.01333 20.198 9.33 20.198 12C20.198 14.67 20.188 14.9867 20.14 16.0413C20.0953 17.016 19.9333 17.5453 19.7953 17.898C19.6353 18.3324 19.3799 18.7253 19.048 19.048C18.7254 19.38 18.3324 19.6354 17.898 19.7953C17.5453 19.9327 17.016 20.0953 16.0413 20.14C14.9867 20.188 14.6707 20.198 12 20.198C9.32933 20.198 9.01333 20.188 7.95867 20.14C6.984 20.0953 6.45467 19.9333 6.102 19.7953C5.66764 19.6353 5.27467 19.3799 4.952 19.048C4.62012 18.7253 4.36475 18.3323 4.20467 17.898C4.06733 17.5453 3.90467 17.016 3.86 16.0413C3.812 14.9867 3.802 14.67 3.802 12C3.802 9.33 3.812 9.01333 3.86 7.95867C3.90467 6.984 4.06667 6.45467 4.20467 6.102C4.38533 5.63533 4.60267 5.302 4.952 4.952C5.27463 4.62003 5.66761 4.36465 6.102 4.20467C6.45467 4.06733 6.984 3.90467 7.95867 3.86C9.01333 3.812 9.33 3.802 12 3.802Z"
+                                            fill="#fff"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 15.3367C11.5618 15.3367 11.128 15.2504 10.7231 15.0827C10.3183 14.915 9.95047 14.6692 9.64064 14.3594C9.3308 14.0495 9.08502 13.6817 8.91734 13.2769C8.74965 12.8721 8.66335 12.4382 8.66335 12C8.66335 11.5618 8.74965 11.1279 8.91734 10.7231C9.08502 10.3183 9.3308 9.95046 9.64064 9.64062C9.95047 9.33078 10.3183 9.08501 10.7231 8.91732C11.128 8.74964 11.5618 8.66333 12 8.66333C12.885 8.66333 13.7336 9.01487 14.3594 9.64062C14.9851 10.2664 15.3367 11.1151 15.3367 12C15.3367 12.8849 14.9851 13.7336 14.3594 14.3594C13.7336 14.9851 12.885 15.3367 12 15.3367ZM12 6.86C10.6368 6.86 9.32942 7.40153 8.36549 8.36547C7.40155 9.32941 6.86002 10.6368 6.86002 12C6.86002 13.3632 7.40155 14.6706 8.36549 15.6345C9.32942 16.5985 10.6368 17.14 12 17.14C13.3632 17.14 14.6706 16.5985 15.6345 15.6345C16.5985 14.6706 17.14 13.3632 17.14 12C17.14 10.6368 16.5985 9.32941 15.6345 8.36547C14.6706 7.40153 13.3632 6.86 12 6.86ZM18.6353 6.76667C18.6353 7.0889 18.5073 7.39794 18.2795 7.6258C18.0516 7.85366 17.7426 7.98167 17.4204 7.98167C17.0981 7.98167 16.7891 7.85366 16.5612 7.6258C16.3334 7.39794 16.2053 7.0889 16.2053 6.76667C16.2053 6.44443 16.3334 6.13539 16.5612 5.90753C16.7891 5.67968 17.0981 5.55167 17.4204 5.55167C17.7426 5.55167 18.0516 5.67968 18.2795 5.90753C18.5073 6.13539 18.6353 6.44443 18.6353 6.76667Z"
+                                            fill="#fff"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="rede facebook">
+                            <!-- <img class="redeLogo" src="../imgs/logoRede/face2.png" alt=""> -->
+                            <a href="https://www.facebook.com/profile.php?id=61571802004063" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg height="48px" width="48px" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
+                                    stroke-width="0.1" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M9.19765 21.5H13.1976V13.4901H16.8018L17.1976 9.50977H13.1976V7.5C13.1976 6.94772 13.6454 6.5 14.1976 6.5H17.1976V2.5H14.1976C11.4362 2.5 9.19765 4.73858 9.19765 7.5V9.50977H7.19765L6.80176 13.4901H9.19765V21.5Z"
+                                            fill="#fff"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="rede tiktok">
+                            <a href="https://www.tiktok.com/@t.rec_oficial" target="_blank" rel="noopener noreferrer">
+                                <svg height="48px" width="48px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M16.8218 5.1344C16.0887 4.29394 15.648 3.19805 15.648 2H14.7293C14.9659 3.3095 15.7454 4.43326 16.8218 5.1344Z"
+                                            fill="#fff"></path>
+                                        <path
+                                            d="M8.3218 11.9048C6.73038 11.9048 5.43591 13.2004 5.43591 14.7931C5.43591 15.903 6.06691 16.8688 6.98556 17.3517C6.64223 16.8781 6.43808 16.2977 6.43808 15.6661C6.43808 14.0734 7.73255 12.7778 9.324 12.7778C9.62093 12.7778 9.90856 12.8288 10.1777 12.9124V9.40192C9.89927 9.36473 9.61628 9.34149 9.324 9.34149C9.27294 9.34149 9.22654 9.34614 9.1755 9.34614V12.0394C8.90176 11.9558 8.61873 11.9048 8.3218 11.9048Z"
+                                            fill="#fff"></path>
+                                        <path
+                                            d="M19.4245 6.67608V9.34614C17.6429 9.34614 15.9912 8.77501 14.6456 7.80911V14.7977C14.6456 18.2851 11.8108 21.127 8.32172 21.127C6.97621 21.127 5.7235 20.6998 4.69812 19.98C5.8534 21.2198 7.50049 22 9.32392 22C12.8083 22 15.6478 19.1627 15.6478 15.6707V8.68211C16.9933 9.64801 18.645 10.2191 20.4267 10.2191V6.78293C20.0787 6.78293 19.7446 6.74574 19.4245 6.67608Z"
+                                            fill="#fff"></path>
+                                        <path
+                                            d="M14.6456 14.7977V7.80911C15.9912 8.77501 17.6429 9.34614 19.4245 9.34614V6.67608C18.3945 6.45788 17.4899 5.90063 16.8218 5.1344C15.7454 4.43326 14.9704 3.3095 14.7245 2H12.2098L12.2051 15.7775C12.1495 17.3192 10.8782 18.5591 9.32393 18.5591C8.35884 18.5591 7.50977 18.0808 6.98085 17.3564C6.06219 16.8688 5.4312 15.9076 5.4312 14.7977C5.4312 13.205 6.72567 11.9094 8.31708 11.9094C8.61402 11.9094 8.90168 11.9605 9.17079 12.0441V9.35079C5.75598 9.42509 3 12.2298 3 15.6707C3 17.3331 3.64492 18.847 4.69812 19.98C5.7235 20.6998 6.97621 21.127 8.32172 21.127C11.8061 21.127 14.6456 18.2851 14.6456 14.7977Z"
+                                            fill="#fff"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="rede whatsapp">
+                            <a href="https://wa.me/5512991031900?text=Olá, estou gostaria de saber mais sobre os serviços oferecidos"
+                                target="_blank" rel="noopener noreferrer"><svg height="48px" width="48px" stroke="#fff"
+                                    stroke-width="0.6" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M2 22L3.41152 16.8691C2.54422 15.3639 2.08876 13.6568 2.09099 11.9196C2.08095 6.44549 6.52644 2 11.99 2C14.6417 2 17.1315 3.02806 19.0062 4.9034C19.9303 5.82266 20.6627 6.91616 21.1611 8.12054C21.6595 9.32492 21.9139 10.6162 21.9096 11.9196C21.9096 17.3832 17.4641 21.8287 12 21.8287C10.3368 21.8287 8.71374 21.4151 7.26204 20.6192L2 22ZM7.49424 18.8349L7.79675 19.0162C9.06649 19.7676 10.5146 20.1644 11.99 20.1654C16.5264 20.1654 20.2263 16.4662 20.2263 11.9291C20.2263 9.73176 19.3696 7.65554 17.8168 6.1034C17.0533 5.33553 16.1453 4.72636 15.1453 4.31101C14.1452 3.89565 13.0728 3.68232 11.99 3.68331C7.44343 3.6839 3.74476 7.38316 3.74476 11.9202C3.74476 13.4724 4.17843 14.995 5.00502 16.3055L5.19645 16.618L4.35982 19.662L7.49483 18.8354L7.49424 18.8349Z"
+                                            fill="#fff"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.52024 7.76662C9.33885 7.35303 9.13737 7.34298 8.96603 7.34298C8.81477 7.33294 8.65288 7.33294 8.48154 7.33294C8.32083 7.33294 8.04845 7.39321 7.81684 7.64549C7.58464 7.89719 6.95007 8.49217 6.95007 9.71167C6.95007 10.9318 7.83693 12.1111 7.95805 12.2724C8.07858 12.4337 9.67149 15.0139 12.192 16.0124C14.2883 16.839 14.712 16.6777 15.1657 16.6269C15.6189 16.5767 16.6275 16.0325 16.839 15.4476C17.0405 14.8733 17.0405 14.3693 16.9802 14.2682C16.9199 14.1678 16.748 14.1069 16.5064 13.9758C16.2541 13.8552 15.0446 13.2502 14.813 13.1693C14.5808 13.0889 14.4195 13.0487 14.2582 13.2904C14.0969 13.5427 13.623 14.0969 13.4724 14.2582C13.3306 14.4195 13.1799 14.4396 12.9377 14.3185C12.686 14.1979 11.8895 13.9356 10.9418 13.0889C10.2056 12.4331 9.71167 11.6171 9.56041 11.3755C9.41979 11.1232 9.54032 10.992 9.67149 10.8709C9.78257 10.7604 9.92378 10.579 10.0449 10.4378C10.1654 10.296 10.2056 10.1855 10.2966 10.0242C10.377 9.86292 10.3368 9.71167 10.2765 9.59114C10.2157 9.48006 9.74239 8.25997 9.52024 7.76603V7.76662Z"
+                                            fill="#fff"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gov">
+                    <ul>
+                        <li class="email">trec-sac@trec.com</li>
+                        <li class="cnpj">12.123.123/1234-12</li>
+                        <li class="celular">+55 12 9 9999 9999</li>
+                    </ul>
+                </div>
+                <div class="termos">
+
+                </div>
             </div>
         </div>
         <!-- direitos reservados -->
     </footer>
+
     <script type="module" src="../scripts/dunno.js"></script>
     <script src="../scripts/nav.js"></script>
+    <script src="../scripts/show.js"></script>
 </body>
 
 </html>

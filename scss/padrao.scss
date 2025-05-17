@@ -30,13 +30,13 @@ $warning-content: #d3d398;
 $error-content: #d39898;
 
 
-$width-size:100dvw;
+$width-size: 100dvw;
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -59,11 +59,17 @@ html::selection {
 
 section>* {
     margin: 0 auto;
+    max-width: 1440px;
 }
 
-body, main {
+body,
+main {
+    background-color: #e8e6e6;
     width: 100dvw;
-    // overflow-x: hidden;
+    overflow-x: hidden;
+}
+ul{
+    list-style: none;
 }
 
 .first {
